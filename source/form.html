@@ -44,22 +44,54 @@
             <legend class="visually-hidden">Имя, вес, возраст.</legend>
             <ul class="group__list">
               <li class="group__field field">
-                <label class="field-name">ИМЯ:*
+                <label class="field-label label">ИМЯ:*
                   <input class="form-name" type="text" name="name" placeholder="БАРСИК" required>
                 </label>
               </li>
 
               <li class="group__field field">
-                <label class="field-name">ВЕС(КГ):*
+                <label class="field-label label">ВЕС(КГ):*
                   <input class="form-name" type="text" name="name" placeholder="7" required>
                 </label>
               </li>
 
               <li class="group__field field">
-                <label class="field-name">ВОЗРАСТ(ЛЕТ):*
+                <label class="field-label label">ВОЗРАСТ(ЛЕТ):*
                   <input class="form-name" type="text" name="name" placeholder="7">
                 </label>
               </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="group__items">
+            <legend class="visually-hidden">Выбор назначения корма.</legend>
+            <ul class="group__list">
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group"
+                    value="shaving-supplies" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Похудение</span>
+                </label>
+              </li>
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group" value="care-products">
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Набор массы</span>
+                </label>
+              </li>
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group" value="accessories">
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Не знаю (нужен Ваш совет</span>
+                </label>
+              </li>
+
             </ul>
           </fieldset>
         </div>
