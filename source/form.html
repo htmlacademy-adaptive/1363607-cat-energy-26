@@ -69,8 +69,8 @@
 
               <li class="group__control">
                 <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="product-group"
-                    value="shaving-supplies" checked>
+                  <input class="visually-hidden control__input" type="radio" name="weight-loss" value="shaving-supplies"
+                    checked>
                   <span class="control__mark"></span>
                   <span class="control__label label">Похудение</span>
                 </label>
@@ -78,7 +78,7 @@
 
               <li class="group__control">
                 <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="product-group" value="care-products">
+                  <input class="visually-hidden control__input" type="radio" name="mass-gain" value="care-products">
                   <span class="control__mark"></span>
                   <span class="control__label label">Набор массы</span>
                 </label>
@@ -86,7 +86,7 @@
 
               <li class="group__control">
                 <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="product-group" value="accessories">
+                  <input class="visually-hidden control__input" type="radio" name="don't-know" value="accessories">
                   <span class="control__mark"></span>
                   <span class="control__label label">Не знаю (нужен Ваш совет</span>
                 </label>
@@ -94,6 +94,7 @@
 
             </ul>
           </fieldset>
+
           <fieldset class="group__items">
             <legend class="group__title title title__line">Контакеные данные (владельца кота)</legend>
             <ul class="group__list">
@@ -114,11 +115,54 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="group__items">
             <legend class="group__title title title__line">Комментарий</legend>
             <textarea class="group__comment" name="comment" id="comment-field" cols="280" rows="5"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
+
+          <fieldset class="group__items">
+            <legend class="group__title title title__line">Дополнительно</legend>
+            <ul class="group__list">
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Сахарозаменитель</span>
+                </label>
+              </li>
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="drinking-water">
+                  <span class="control__mark"></span>
+                  <span class="control__label label">питьевая вода</span>
+                </label>
+              </li>
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="milk">
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Молоко</span>
+                </label>
+              </li>
+
+              <li class="group__control">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="vitamins">
+                  <span class="control__mark"></span>
+                  <span class="control__label label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="group__button">
+            <button class="order-form__button button">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <p class="group__required-fields">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
     </section>
