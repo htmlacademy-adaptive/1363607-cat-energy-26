@@ -34,29 +34,29 @@
     </nav>
   </header>
   <main class="main-page">
-    <section class="main-page__order-form">
+    <section class="main-page__order-form order-form">
       <h1 class="order-form__title title">Подбор программы</h1>
       <b class="order-form__subtitle subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота</b>
       <form action="https://echo.htmlacademy.ru/" class="order-form__container" method="get">
-        <div class="order-form__group">
+        <div class="order-form__group group">
           <fieldset class="group__items">
             <legend class="visually-hidden">Имя, вес, возраст.</legend>
             <ul class="group__list">
               <li class="group__field field">
-                <label class="field-label label">ИМЯ:*
+                <label class="field__label label">ИМЯ:*
                   <input class="form-name" type="text" name="name" placeholder="БАРСИК" required>
                 </label>
               </li>
 
               <li class="group__field field">
-                <label class="field-label label">ВЕС(КГ):*
-                  <input class="form-name" type="text" name="name" placeholder="7" required>
+                <label class="field__label label">ВЕС(КГ):*
+                  <input class="field__name" type="text" name="name" placeholder="7" required>
                 </label>
               </li>
 
               <li class="group__field field">
-                <label class="field-label label">ВОЗРАСТ(ЛЕТ):*
+                <label class="field__label label">ВОЗРАСТ(ЛЕТ):*
                   <input class="form-name" type="text" name="name" placeholder="7">
                 </label>
               </li>
@@ -96,7 +96,7 @@
           </fieldset>
 
           <fieldset class="group__items">
-            <legend class="group__title title title__line">Контакеные данные (владельца кота)</legend>
+            <legend class="group__title title title--line">Контакеные данные (владельца кота)</legend>
             <ul class="group__list">
               <li class="group__field field">
                 <label class="field__label label">E-MAIL:*
@@ -117,13 +117,13 @@
           </fieldset>
 
           <fieldset class="group__items">
-            <legend class="group__title title title__line">Комментарий</legend>
+            <legend class="group__title title title--line">Комментарий</legend>
             <textarea class="group__comment" name="comment" id="comment-field" cols="280" rows="5"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
 
           <fieldset class="group__items">
-            <legend class="group__title title title__line">Дополнительно</legend>
+            <legend class="group__title title title--line">Дополнительно</legend>
             <ul class="group__list">
 
               <li class="group__control">
@@ -170,7 +170,7 @@
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
       <div class="contacts__info">
-        <h3 class="contacts__info--title">приглашаем к сотрудничеству дилеров!</h3>
+        <h3 class="contacts__info-title">приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <iframe class="main-footer__map"
@@ -178,8 +178,8 @@
         width="320" height="362" frameborder="0"></iframe>
     </div>
     <div class="main-footer__footer">
-      <a class="main-header__logo--text" href="">
-        <img class="main-header__logo--image" src="../img/" alt="" />
+      <a class="main-footer__logo-text" href="">
+        <img class="main-footer__logo-image" src="../img/" alt="" />
       </a>
 
       <div class="main-footer__social social">
@@ -201,8 +201,8 @@
 
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="main-header__logo--html" href="">
-          <img class="main-header__logo--image" src="../img/" alt="" />
+        <a class="main-footer__logo-html" href="">
+          <img class="main-footer__logo-image" src="../img/" alt="" />
         </a>
       </div>
     </div>
