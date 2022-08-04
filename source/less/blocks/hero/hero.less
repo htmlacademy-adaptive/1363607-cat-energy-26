@@ -4,6 +4,7 @@
 
 
 .main-index__hero {
+  position: relative;
   width: 320px;
   margin: 0;
   padding: 0;
@@ -11,17 +12,34 @@
   background-size: 320px 320px;
   background-position: left top;
   background-repeat: no-repeat;
-  background-color: rgba(105, 183, 56, 0.85);
   box-sizing: border-box;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    background-color: rgba(105, 183, 56, 0.85);
+    z-index: 1;
+  }
 }
 
 .hero {
+  position: relative;
   margin: 0;
-  padding: 0 20px;
-
+  padding: 27px 20px 20px 20px;
+  text-align: center;
+  z-index: 50;
+  outline: 1px solid #bb3fb1;
 }
 
 .hero__title {
+  margin: 0 0 25px 0;
+  outline: 1px solid #bb3fb1;
+}
+.title-hero{
+  position: relative;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -29,15 +47,23 @@
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
+  z-index: 5;
 }
 .hero__subtitle {
+  margin: 0 0 29px 0;
+  outline: 1px solid #bb3fb1;
 }
 .hero__button {
+  color: #FFFFFF;
+  background-color: #68B738;
 }
 .hero__image {
+  position: relative;
+  z-index: 5;
 }
 
 .subtitle {
+  position: relative;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -45,6 +71,17 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
+  z-index: 5;
 }
 .button {
+  display: inline-block;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 1px solid #bb3fb1;
 }
+
