@@ -1,0 +1,248 @@
+.main-header {
+  margin: 0;
+  padding: 10px 20px 17px 20px;
+  border: 1px solid #8a2be2;
+}
+.header {
+  background-color: #ffffff;
+}
+.site-list__item {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.main-index {
+  margin: 0;
+}
+.main-index__hero {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../../img/hero/cat-background.png");
+  background-size: 320px 320px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: rgba(105, 183, 56, 0.85);
+  box-sizing: border-box;
+}
+.hero {
+  margin: 0;
+  padding: 0 20px;
+}
+.hero__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.subtitle {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.programs {
+  width: 320px;
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #bb3fb1;
+  box-sizing: border-box;
+}
+.programs__list {
+  padding: 0;
+  margin: 0;
+}
+.programs__item {
+  margin: 0 0 20px 0;
+  border: 1px solid #bb3fb1;
+}
+.programs__item:last-child {
+  margin: 0;
+}
+.programs-card {
+  background-color: #F2F2F2;
+  list-style-type: none;
+}
+.programs__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.description {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+}
+.button {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.advetages {
+  width: 320px;
+  margin: 0;
+  padding: 0 20px 49px 20px;
+  box-sizing: border-box;
+  border: 1px solid #bb3fb1;
+}
+.title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.advetages__title {
+  margin-bottom: 0 0 40x 0;
+}
+.advetages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advetages__item {
+  margin-bottom: 20px;
+  border: 1px solid #bb3fb1;
+}
+.advetages__item:last-child {
+  margin-bottom: 0;
+}
+.example {
+  width: 320px;
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+  background-color: #EAEAEA;
+  box-sizing: border-box;
+  border: 1px solid #bb3fb1;
+}
+.example__title {
+  margin: 0 0 40px 0;
+  border: 1px solid #bb3fb1;
+}
+.example__description {
+  margin-bottom: 20px;
+  border: 1px solid #bb3fb1;
+}
+.example__promo {
+  margin: 0 0 20px 0;
+}
+.promo {
+  border: 1px solid #bb3fb1;
+}
+.example__subtitle {
+  line-height: 20px;
+  color: #000000;
+  margin: 0 0 40px 0;
+  border: 1px solid #bb3fb1;
+}
+.slider-range {
+  border: 1px solid #bb3fb1;
+}
+.slider-range__picture {
+  margin: 0 0 15px 0;
+}
+.slider-range__scale-min {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider-range__scale-max {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.main-footer {
+  width: 320px;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #bb3fb1;
+  box-sizing: border-box;
+}
+.main-footer__contacts {
+  margin: 0;
+  padding: 0;
+}
+.contacts {
+  border: 1px solid #bb3fb1;
+}
+.contacts__info {
+  padding: 26px 20px;
+}
+.contacts__info-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.contacts__text {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+.main-footer__footer {
+  margin: 0;
+  padding: 22px 20px;
+  background-color: #F2F2F2;
+  border: 1px solid #bb3fb1;
+}
+.main-footer__logo-text {
+  border: 1px solid #bb3fb1;
+}
+.social {
+  border: 1px solid #bb3fb1;
+}
+.social__list {
+  list-style-type: none;
+  padding: 0;
+}
+.copyright {
+  border: 1px solid #bb3fb1;
+}
+.main-footer__link {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+/*# sourceMappingURL=style.css.map */
