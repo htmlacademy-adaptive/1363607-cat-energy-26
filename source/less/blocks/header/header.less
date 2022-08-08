@@ -1,6 +1,19 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   width: 320px;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .header {
+    width: 1440px;
+  }
 }
 .header__logo{
 
