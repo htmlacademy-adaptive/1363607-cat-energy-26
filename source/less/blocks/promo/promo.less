@@ -1,11 +1,37 @@
 .promo {
-    border: 1px solid #bb3fb1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid #bb3fb1;
 }
-.promo__item {
+.promo__wrapper {}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .promo__title {
 }
 .promo__description {
-    
-}
 
+}
+.promo__wrapper{
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid #bb3fb1;
+}
+.promo__subtitle {
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  border: 1px solid #bb3fb1;
+
+}
+@media (min-width: @tablet-width) {
+  .promo__subtitle {
+    width: 176px;
+    text-align: right;
+  }
+}
