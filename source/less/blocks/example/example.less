@@ -1,5 +1,5 @@
 .example {
-  width: 100%;
+  width: 320px;
   max-width: 1440px;
   margin: 0;
   background-color: #EAEAEA;
@@ -8,8 +8,12 @@
 }
 @media (min-width: @tablet-width) {
   .example{
-    background-size: 768 440;
-    background-position: bottom;
+    width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .example{
+    width: 1440px;
   }
 }
 .example__wrapper {

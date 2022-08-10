@@ -1,14 +1,14 @@
 .main-index {
     margin: 0;
   }
-  
-  
+
+
   .main-index__hero {
     position: relative;
     width: 320px;
     margin: 0;
     padding: 0;
-    background-image: url("../../../img/hero/cat-background.png");
+    background: url("../img/hero/cat-background.png");
     background-size: 320px 320px;
     background-position: left top;
     background-repeat: no-repeat;
@@ -20,7 +20,25 @@
       left: 0;
       width: 320px;
       height: 320px;
-      background-color: rgba(105, 183, 56, 0.85);
+      background: @transparent-green;
       z-index: 1;
     }
+
+
+  }
+  @media (min-width: @tablet-width) {
+    .main-index__hero {
+      width: 768px;
+      background: @White;
+      outline: 1px solid #bb3fb1;
+    }
+
+  }
+  @media (min-width: @desktop-width) {
+    .main-index__hero {
+      width: 1440px;
+      background: @White;
+      outline: 1px solid #bb3fb1;
+    }
+
   }

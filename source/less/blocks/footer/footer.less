@@ -1,10 +1,20 @@
 .main-footer {
-    width: 100%;
+    width: 320px;
     max-width: 1440px;
     margin: 0;
     background-color: @White;
     outline: 1px solid #bb3fb1;
     box-sizing: border-box;
+}
+@media (min-width: @tablet-width) {
+  .main-footer {
+    width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-footer {
+    width: 1440px;
+  }
 }
 .main-footer__contacts {
     margin: 0;
