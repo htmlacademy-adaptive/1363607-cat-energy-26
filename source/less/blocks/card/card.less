@@ -1,6 +1,19 @@
 .card {
     margin: 0;
+    padding: 13px 0 19px;
     
+}
+@media (min-width: @tablet-width) {
+    .card {
+        padding: 26px 38px 28px 38px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .card {
+        display: flex;
+       
+        padding: 26px 38px 28px 38px;
+    }
 }
 .card__card-box {
     margin: 0;
@@ -15,6 +28,7 @@
 .card__item-info {
 }
 .card__title {
+    margin: 0;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
@@ -40,5 +54,6 @@
 .card__discription {
 }
 .card__box {
+   
     outline: 1px solid #bb3fb1;
 }
