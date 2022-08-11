@@ -41,7 +41,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 633px;
-
   }
 }
 @media (min-width: @desktop-width) {
@@ -68,17 +67,19 @@
 }
 
 @media (min-width:@tablet-width) {
-  .advetages__item--natur {
-    width: 230px;
-  }
-  .advetages__item--fast {
-    width: 246px;
-  }
-  .advetages__item--change {
-    width: 247px;
-  }
-  .advetages__item--time {
-    width: 249px;
+  .advetages__item {
+    &--natur {
+      width: 230px;
+    }
+    &--fast {
+      width: 246px;
+    }
+    &--change {
+      width: 247px;
+    }
+    &--time {
+      width: 249px;
+    }
   }
 }
 
