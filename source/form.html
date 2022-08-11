@@ -9,27 +9,27 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header__logo" href="">
+  <header class="main-header header">
+    <a class="header__logo" href="">
       <picture>
         <source srcset="" media="">
         <img src="" alt="Логотип.">
       </picture>
     </a>
-    <nav class="main-navigation">
-      <div class="main-navigation__item">
-        <span class="main-navigation__icon">
+    <nav class="header__navigation navigation">
+      <div class="navigation__item">
+        <span class="navigation__icon">
           <span class="visually-hidden">открыть или закрыть меню.</span>
         </span>
       </div>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item ">
+      <ul class="navigation__list site-list">
+        <li class="site-list__item site-list__item--current">
           <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -42,62 +42,64 @@
         программу питания для вашего кота</b>
       <form action="https://echo.htmlacademy.ru/" class="order-form__container" method="get">
         <div class="order-form__group group">
-          <fieldset class="group__items">
-            <legend class="visually-hidden">Имя, вес, возраст.</legend>
-            <ul class="group__list">
-              <li class="group__field field">
-                <label class="field__label label">ИМЯ:*
-                  <input class="form-name" type="text" name="name" placeholder="БАРСИК" required>
-                </label>
-              </li>
+          <div class="group__header">
+            <fieldset class="group__items">
+              <legend class="visually-hidden">Имя, вес, возраст.</legend>
+              <ul class="group__list">
+                <li class="group__field field">
+                  <label class="field__label label">ИМЯ:*
+                    <input class="form-name" type="text" name="name" placeholder="БАРСИК" required>
+                  </label>
+                </li>
+  
+                <li class="group__field field">
+                  <label class="field__label label">ВЕС(КГ):*
+                    <input class="field__name" type="text" name="name" placeholder="7" required>
+                  </label>
+                </li>
+  
+                <li class="group__field field">
+                  <label class="field__label label">ВОЗРАСТ(ЛЕТ):*
+                    <input class="form-name" type="text" name="name" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+  
+            <fieldset class="group__items">
+              <legend class="visually-hidden">Выбор назначения корма.</legend>
+              <ul class="group__list">
+  
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="weight-loss" value="shaving-supplies"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Похудение</span>
+                  </label>
+                </li>
+  
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="mass-gain" value="care-products">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Набор массы</span>
+                  </label>
+                </li>
+  
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="don't-know" value="accessories">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Не знаю (нужен Ваш совет</span>
+                  </label>
+                </li>
+  
+              </ul>
+            </fieldset>
+          </div>
 
-              <li class="group__field field">
-                <label class="field__label label">ВЕС(КГ):*
-                  <input class="field__name" type="text" name="name" placeholder="7" required>
-                </label>
-              </li>
-
-              <li class="group__field field">
-                <label class="field__label label">ВОЗРАСТ(ЛЕТ):*
-                  <input class="form-name" type="text" name="name" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="group__items">
-            <legend class="visually-hidden">Выбор назначения корма.</legend>
-            <ul class="group__list">
-
-              <li class="group__control">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="weight-loss" value="shaving-supplies"
-                    checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label label">Похудение</span>
-                </label>
-              </li>
-
-              <li class="group__control">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="mass-gain" value="care-products">
-                  <span class="control__mark"></span>
-                  <span class="control__label label">Набор массы</span>
-                </label>
-              </li>
-
-              <li class="group__control">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="don't-know" value="accessories">
-                  <span class="control__mark"></span>
-                  <span class="control__label label">Не знаю (нужен Ваш совет</span>
-                </label>
-              </li>
-
-            </ul>
-          </fieldset>
-
-          <fieldset class="group__items">
+          <fieldset class="group__items-fl">
             <legend class="group__title title title--line">Контакеные данные (владельца кота)</legend>
             <ul class="group__list">
               <li class="group__field field">
@@ -118,16 +120,16 @@
             </ul>
           </fieldset>
 
-          <fieldset class="group__items">
+          <fieldset class="group__items-fl">
+            <legend class="group__title title title--line">Комментарий</legend>
             <div class="group__list">
-              <legend class="group__title title title--line">Комментарий</legend>
-              <textarea class="group__comment" name="comment" id="comment-field" cols="30" rows="5"
+              <textarea class="group__  comment" name="comment" id="comment-field" cols="30" rows="5"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
 
           </fieldset>
 
-          <fieldset class="group__items">
+          <fieldset class="group__items-fl">
             <legend class="group__title title title--line">Дополнительно</legend>
             <ul class="group__list">
 
@@ -180,7 +182,7 @@
       </div>
       <iframe class="main-footer__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
-        width="320" height="362" frameborder="0"></iframe>
+        width="100%" height="400" frameborder="0"></iframe>
     </div>
     <div class="main-footer__footer">
       <a class="main-footer__logo-text" href="">
