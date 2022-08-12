@@ -23,7 +23,7 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../../../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
 .page {
@@ -32,8 +32,9 @@
 .page-body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   align-items: center;
   background-color: #ffffff;
 }
@@ -100,7 +101,7 @@
   }
 }
 .site-list__item {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -203,7 +204,7 @@
 }
 .subtitle {
   position: relative;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -214,7 +215,7 @@
 }
 .button {
   display: inline-block;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -271,7 +272,7 @@
   list-style-type: none;
 }
 .programs-card__title {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -285,7 +286,7 @@
   color: #000000;
 }
 .description {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -312,7 +313,7 @@
   }
 }
 .title {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -456,7 +457,7 @@
   margin: 0 0 15px 0;
 }
 .slider-range__scale-min {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -465,7 +466,7 @@
   color: #000000;
 }
 .slider-range__scale-max {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -525,7 +526,7 @@
   outline: 1px solid #bb3fb1;
 }
 .copyright__link {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -566,7 +567,7 @@
 }
 .contacts__info-title {
   flex: 0 0 139px;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -582,7 +583,7 @@
 }
 .contacts__text {
   flex: 0 0 139px;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -614,7 +615,7 @@
   border: 1px solid #bb3fb1;
 }
 .copyright__link {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -631,7 +632,7 @@
 }
 .catalog {
   width: 320px;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
   outline: 1px solid #bb3fb1;
 }
@@ -677,31 +678,39 @@
   outline: 1px solid #bb3fb1;
 }
 .card {
-  margin: 0;
-  padding: 13px 0 19px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .card {
-    padding: 26px 38px 28px 38px;
-  }
-}
-@media (min-width: 1440px) {
-  .card {
-    display: flex;
-    padding: 26px 38px 28px 38px;
+    background-color: #F2F2F2;
   }
 }
 .card__card-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
-  padding: 11px 0 14px 0;
+  padding: 11px 20px 14px;
+  box-sizing: border-box;
   outline: 1px solid #bb3fb1;
+}
+.card__item {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .card__item {
+    flex-direction: column;
+  }
 }
 .card__item-image {
   margin: 0;
 }
 .card__title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -719,7 +728,7 @@
   outline: 1px solid #bb3fb1;
 }
 .stats__item {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -742,6 +751,8 @@
   }
 }
 .additional-items__wraper {
+  width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
   outline: 1px solid #bb3fb1;
@@ -834,7 +845,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   z-index: 5;
 }
@@ -912,7 +923,7 @@
   box-sizing: border-box;
 }
 .field-name {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -921,7 +932,7 @@
   color: #444444;
 }
 .label {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
