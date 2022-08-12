@@ -1,23 +1,30 @@
 .card {
-  margin: 0;
-  padding: 13px 0 19px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 
-}
-@media (min-width: @tablet-width) {
-  .card {
-    padding: 26px 38px 28px 38px;
+  @media (min-width: @tablet-width) {
+    background-color: @basic-grey;
   }
 }
-@media (min-width: @desktop-width) {
-  .card {
-    display: flex;
-    padding: 26px 38px 28px 38px;
-  }
-}
+
 .card__card-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
-  padding: 11px 0 14px 0;
+  padding: 11px 20px 14px;
+  box-sizing: border-box;
   outline: 1px solid #bb3fb1;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .card__item-image {
@@ -26,7 +33,7 @@
 
 .card__title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -35,14 +42,12 @@
   color: @special-dark-grey;
 }
 
-
 .card__button {
   font-size: 16px;
   line-height: 20px;
   color: @White;
   background-color: @basic-green;
 }
-
 
 .card__box {
   outline: 1px solid #bb3fb1;

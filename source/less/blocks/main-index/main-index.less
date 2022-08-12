@@ -1,7 +1,6 @@
 .main-index {
   margin: 0;
-  }
-
+}
 
 .main-index__hero {
   position: relative;
@@ -13,6 +12,7 @@
   background-position: left top;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  
   &::after {
     content: "";
     position: absolute;
@@ -23,18 +23,14 @@
     background: @transparent-green;
     z-index: 1;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .main-index__hero {
+  @media (min-width: @tablet-width) {
     width: 768px;
     background: @White;
     outline: 1px solid #bb3fb1;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-index__hero {
+  @media (min-width: @desktop-width) {
     width: 1440px;
     background: @White;
     outline: 1px solid #bb3fb1;

@@ -2,41 +2,40 @@
   width: 320px;
   padding: 25px 0 35px 0;
   outline: 1px solid #bb3fb1;
-}
-@media (min-width: @tablet-width) {
-  .additional-items {
+
+  @media (min-width: @tablet-width) {
     width: 768px;
   }
-}
-@media (min-width: @desktop-width) {
-  .additional-items {
+
+  @media (min-width: @desktop-width) {
     width: 1440px;
   }
 }
+
 .additional-items__wraper {
+  width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
   outline: 1px solid #bb3fb1;
-}
-@media (min-width: @tablet-width) {
-  .additional-items__wraper {
+
+  @media (min-width: @tablet-width) {
     padding: 0 30px;
   }
-}
-@media (min-width: @desktop-width) {
-  .additional-items__wraper {
+
+  @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
   }
 }
+
 .additional-items__title {
   margin: 0 0 36px 0;
   padding-left: 20px;
-}
-@media (min-width: @tablet-width) {
-  .additional-items__title {
-      padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
   }
 }
 
@@ -45,22 +44,21 @@
   padding: 0;
   list-style-type: none;
   outline: 1px solid #bb3fb1;
-}
-@media (min-width: @tablet-width) {
-  .additional-items__list {
+
+  @media (min-width: @tablet-width) {
     margin-bottom: 69px;
   }
-}@media (min-width: @desktop-width) {
-  .additional-items__list {
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
 }
+
 .additional-items__card {
   box-sizing: border-box;
   outline: 1px solid #bb3fb1;
-}
-@media (min-width: @desktop-width) {
-  .additional-items__card {
+
+  @media (min-width: @desktop-width) {
     width: 896px;
   }
 }
@@ -80,6 +78,7 @@
   background-repeat: no-repeat;
   text-decoration: none;
   box-sizing: border-box;
+
   &::after {
     content: "";
     position: absolute;
@@ -90,14 +89,12 @@
     background: @transparent-green;
     z-index: 1;
   }
-}
-@media (min-width: @tablet-width) {
-  .additional-items__button {
+
+  @media (min-width: @tablet-width) {
     background: @transparent-green;
   }
-}
-@media (min-width: @desktop-width) {
-  .additional-items__button {
+
+  @media (min-width: @desktop-width) {
     width: 245px;
   }
 }
@@ -109,7 +106,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: @White;
   margin: 0;
   z-index: 5;
 }
