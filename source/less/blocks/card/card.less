@@ -1,44 +1,54 @@
 .card {
-    margin: 0;
-    
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-grey;
+  }
 }
+
 .card__card-box {
-    margin: 0;
-    padding: 11px 20px 14px 20px;
-    outline: 1px solid #bb3fb1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 11px 20px 14px;
+  box-sizing: border-box;
+  outline: 1px solid #bb3fb1;
 }
+
 .card__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 }
+
 .card__item-image {
-    margin: 0;
+  margin: 0;
 }
-.card__item-info {
-}
+
 .card__title {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #222222;
-}
-.card__stats {
+  margin: 0;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @special-dark-grey;
 }
 
 .card__button {
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #68B738;
+  font-size: 16px;
+  line-height: 20px;
+  color: @White;
+  background-color: @basic-green;
 }
 
-.card__icon {
-}
-.card-title {
-}
-.card__discription {
-}
 .card__box {
-    outline: 1px solid #bb3fb1;
+  outline: 1px solid #bb3fb1;
 }

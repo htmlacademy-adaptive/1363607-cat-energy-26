@@ -1,7 +1,16 @@
 .main-header {
-    width: 320px;
-    margin: 0;
-    padding: 10px 20px 17px 20px;
-    box-sizing: border-box;
-    outline: 1px solid #8a2be2;
- }
+  width: 320px;
+  margin: 0;
+  padding: 10px 20px 17px 20px;
+  box-sizing: border-box;
+  outline: 1px solid #8a2be2;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 24px 30px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    padding: 53px 110px 29px;
+  }
+}

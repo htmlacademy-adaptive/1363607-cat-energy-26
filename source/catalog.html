@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
-<body>
-  <header class="main-header">
-    <a class="main-header__logo" href="">
+<body class="page-body">
+  <header class="main-header header">
+    <a class="header__logo" href="">
       <picture>
         <source srcset="" media="">
         <img src="" alt="Логотип.">
       </picture>
     </a>
-    <nav class="main-navigation">
-      <div class="main-navigation__item">
-        <span class="main-navigation__icon">
+    <nav class="header__navigation navigation">
+      <div class="navigation__item">
+        <span class="navigation__icon">
           <span class="visually-hidden">открыть или закрыть меню.</span>
         </span>
       </div>
-      <ul class="main-navigation__list site-list">
+      <ul class="navigation__list site-list">
         <li class="site-list__item site-list__item--current">
           <a href="index.html">Главная</a>
         </li>
@@ -34,10 +35,11 @@
       </ul>
     </nav>
   </header>
-  <main class="main-page">
+  <main class="main-container main-page">
     <section class="catalog">
-      <h1 class="main-page__titl title">Каталог продукции</h1>
+      <h1 class="main-page__title title">Каталог продукции</h1>
       <ul class="catalog__list">
+
         <li class="catalog__card card">
           <article class="card__card-box">
             <div class="card__item">
@@ -67,7 +69,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/chicken-bg.jpg" width="140px" height="112px" alt="" />
@@ -95,7 +97,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/fish-sm.jpg" width="140px" height="112px" alt="" />
@@ -123,7 +125,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/fish-dg.jpg" width="140px" height="112px" alt="" />
@@ -151,7 +153,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/groats-sm.jpg" width="140px" height="112px" alt="" />
@@ -179,7 +181,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/groats-bg.jpg" width="140px" height="112px" alt="" />
@@ -207,7 +209,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <img src="../img/catalog/rice-sm.jpg" width="140px" height="112px" alt="" />
@@ -235,7 +237,7 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="catalog__card-box">
+          <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
                 <span class="card__icon"></span>
@@ -249,8 +251,9 @@
       </ul>
     </section>
     <section class="additional-items">
+      <h2 class="additional-items__title title title--line-after">Дополнительные товары</h2>
       <div class="additional-items__wraper">
-        <h2 class="additional-items__title title title--line-after">Дополнительные товары</h2>
+
         <ul class="additional-items__list">
           <li class="additional-items__card card">
             <article class="card__box">
@@ -322,7 +325,7 @@
       </div>
       <iframe class="main-footer__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
-        width="320" height="362" frameborder="0"></iframe>
+        width="100%" height="400" frameborder="0"></iframe>
     </div>
     <div class="main-footer__footer">
       <a class="main-footer__logo-text" href="">

@@ -1,78 +1,112 @@
 .additional-items {
+  width: 320px;
+  padding: 25px 0 35px 0;
+  outline: 1px solid #bb3fb1;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
+
 .additional-items__wraper {
-    width: 320px;
-    padding: 35px 20px;
-    box-sizing: border-box;
-    outline: 1px solid #bb3fb1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: 1px solid #bb3fb1;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+  }
 }
+
 .additional-items__title {
+  margin: 0 0 36px 0;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
 }
-.title {
-}
-.title--line-after {
-}
+
 .additional-items__list {
-    outline: 1px solid #bb3fb1;
+  margin: 0 0 35px 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 1px solid #bb3fb1;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
+
 .additional-items__card {
-    outline: 1px solid #bb3fb1;
+  box-sizing: border-box;
+  outline: 1px solid #bb3fb1;
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
 }
-.card {
-}
+
 .card__box {
-    outline: 1px solid #bb3fb1;
+  outline: 1px solid #bb3fb1;
 }
-.card__title {
-}
-.card__stats {
-}
-.stats {
-}
-.stats__naim {
-}
-.stats__naim--add {
-}
-.stats__price {
-}
-.stats__price--add {
-}
-.card__button {
-}
-.button {
-}
+
 .additional-items__button {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding-bottom: 230px;
-    background-image: url("../img/catalog/cat-backpack.png");
-    background-position: left top;
-    background-size: 280px 290px;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    box-sizing: border-box;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 280px;
-        height: 100%;
-        background-color: rgba(105, 183, 56, 0.85);
-        z-index: 1;
-      }
+  display: block;
+  position: relative;
+  margin: 0;
+  padding-bottom: 230px;
+  background: url("../img/catalog/cat-backpack.png");
+  background-position: left top;
+  background-size: 280px 290px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: @transparent-green;
+    z-index: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: @transparent-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
-.additional-items__image {
-}
+
 .additional-items__text {
-    position: relative;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-    margin: 0;
-    z-index: 5;
+  position: relative;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @White;
+  margin: 0;
+  z-index: 5;
 }

@@ -1,46 +1,82 @@
 .advetages {
-    width: 320px;
-    margin: 0;
-    padding: 0 20px 49px 20px;
-    box-sizing: border-box;
-    border: 1px solid #bb3fb1;
-}
+  width: 320px;
+  margin: 0;
+  padding: 0 20px 49px 20px;
+  box-sizing: border-box;
+  border: 1px solid #bb3fb1;
 
-.advetages__wrapper {
+  @media (min-width: @tablet-width) {
+      width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px 49px 110px;
+  }
 }
 
 .title {
-   
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    color: #000000;
-}
-.advetages__title {
-    margin-bottom: 0 0 40x 0;
-}
-.advetages__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.advetages__item {
-    margin-bottom: 20px;
-    border: 1px solid #bb3fb1;
-    &:last-child {
-       margin-bottom: 0;
-    }
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @black;
 }
 
-.advetages__item--natur {
+.advetages__title {
+  margin-bottom: 0 0 40px 0;
 }
-.advetages__description {
+
+.advetages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 633px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
-.advetages__item--fast {
-}
-.advetages__item--change {
-}
-.advetages__item--time {
+
+.advetages__item {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #bb3fb1;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 280px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--natur {
+      width: 230px;
+    }
+
+    &--fast {
+      width: 246px;
+    }
+
+    &--change {
+      width: 247px;
+    }
+
+    &--time {
+      width: 249px;
+    }
+  }
 }
