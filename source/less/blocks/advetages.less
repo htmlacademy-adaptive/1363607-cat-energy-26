@@ -1,17 +1,17 @@
 .advetages {
-  width: 320px;
-  margin: 0;
-  padding: 0 20px 49px 20px;
+  // width: 320px;
+  margin-bottom: 49px;
+  // padding: 0;
   box-sizing: border-box;
   border: 1px solid #bb3fb1;
 
-  @media (min-width: @tablet-width) {
-      width: 768px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-    padding: 0 110px 49px 110px;
-  }
+  // @media (min-width: @tablet-width) {
+  //     width: 768px;
+  // }
+  // @media (min-width: @desktop-width) {
+  //   width: 1440px;
+  //   padding: 0 110px 49px 110px;
+  // }
 }
 
 .title {
@@ -49,10 +49,14 @@
 }
 
 .advetages__item {
+  display: flex;
+  position: relative;
+  align-items: center;
   margin-bottom: 20px;
+  // padding-left: 100px;
   box-sizing: border-box;
   border: 1px solid #bb3fb1;
-  
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -79,4 +83,38 @@
       width: 249px;
     }
   }
+}
+
+.advetages__square {
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 20px;
+  background-color: @basic-green;
+
+  &--natur {
+    background-image: url("../img/advetages/natur.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--fast {
+    background-image: url("../img/advetages/natur.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--change {
+    background-image: url("../img/advetages/natur.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--time {
+    background-image: url("../img/advetages/natur.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.advetages__description {
+  // padding-left: 100px;
 }

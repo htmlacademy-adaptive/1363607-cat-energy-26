@@ -9,10 +9,17 @@
 </head>
 
 <body class="page__body">
+  <div class="bad">
+    <div class="container">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quae voluptas id temporibus dolore a
+        perspiciatis, mollitia nihil voluptatibus quis!</p>
+    </div>
+  </div>
   <header class="page__header container header">
     <a class="header__logo" href="">
       <picture>
-        <source srcset="img/logo/logo-tablet.svg" media="(min-width: 768px)", srcset="img/logo/logo-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="img/logo/logo-tablet.svg" media="(min-width: 768px)" , srcset="img/logo/logo-desktop.svg"
+          media="(min-width: 1440px)">
         <img src="img/logo/logo.svg" alt="Логотип.">
       </picture>
     </a>
@@ -45,7 +52,7 @@
         <a class="hero__button button button--hero" href="#">Подобрать программу</a>
       </div>
     </section>
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">Выбор программы</h2>
 
       <ul class="programs__list">
@@ -82,70 +89,83 @@
 
       </ul>
     </section>
-    <section class="advetages">
+    <section class="advetages container">
       <div class="advetages__wrapper">
         <h2 class="advetages__title title">Как это работает</h2>
         <ul class="advetages__list">
           <li class="advetages__item advetages__item--natur">
+            <div class="advetages__square advetages__square--natur"></div>
             <p class="advetages__description description">Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
           <li class="advetages__item advetages__item--fast">
+            <div class="advetages__square advetages__square--fast"></div>
             <p class="advetages__description description">Выпускается в виде порошка, который нужно лишь залить кипятком
               и готово.
             </p>
           </li>
           <li class="advetages__item advetages__item--change">
+            <div class="advetages__square advetages__square--change"></div>
             <p class="advetages__description description">Замените один-два приема обычной еды на наше функциональное
               питание.</p>
           </li>
           <li class="advetages__item advetages__item--time">
+            <div class="advetages__square advetages__square--time"></div>
             <p class="advetages__description description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="example example__wrapper">
-      <div class="exampl__item">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов
-          в день.</p>
-        <div class="example__promo promo">
-          <div class="promo__wrapper">
-            <div class="promo__item">
-              <strong class="promo__title">5 КГ</strong>
-              <span class="promo__description description">снижение веса</span>
-            </div>
+    <section class="example">
+      <div class="container">
+        <div class="exampl__item">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+            на
+            Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в день.</p>
+          <div class="example__promo promo">
+            <div class="promo__wrapper">
+              <div class="promo__item">
+                <strong class="promo__title">5 КГ</strong>
+                <span class="promo__description description">снижение веса</span>
+              </div>
 
-            <div class="promo__item">
-              <strong class="promo__title">60 ДНЕЙ</strong>
-              <span class="promo__description description">затрачено времени</span>
+              <div class="promo__item">
+                <strong class="promo__title">60 ДНЕЙ</strong>
+                <span class="promo__description description">затрачено времени</span>
+              </div>
             </div>
+            <p class="promo__subtitle subtitle">Затраты на питание: 15 000 РУБ. </p>
           </div>
-          <p class="promo__subtitle subtitle">Затраты на питание: 15 000 РУБ. </p>
         </div>
-      </div>
 
-      <div class="exampl__item">
-        <div class="example__slider slider-range">
-          <div class="slider-range__picture">
-            <img src="./img/slider/cat-before.png" width="280px" height="232px" alt="Толстый кот."
-              class="slider-range__image-before">
-            <img src="" alt="Стройный кот." class="slider-range__image-after">
-          </div>
-          <div class="slider-range__scale">
-            <span class="slider-range__scale-min">Было</span>
-            <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
-            <span class="slider-range__scale-max">Стало</span>
+        <div class="exampl__item">
+          <div class="example__slider slider-range">
+            <div class="slider-range__picture">
+              <img src="./img/slider/cat-before.png" width="280px" height="232px" alt="Толстый кот."
+                class="slider-range__image-before">
+              <img src="" alt="Стройный кот." class="slider-range__image-after">
+            </div>
+            <div class="slider-range__scale">
+              <span class="slider-range__scale-min">Было</span>
+              <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
+              <span class="slider-range__scale-max">Стало</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="bad">
+      <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quae voluptas id temporibus dolore a
+          perspiciatis, mollitia nihil voluptatibus quis!</p>
+      </div>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
