@@ -9,12 +9,6 @@
 </head>
 
 <body class="page__body">
-  <div class="bad">
-    <div class="container">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quae voluptas id temporibus dolore a
-        perspiciatis, mollitia nihil voluptatibus quis!</p>
-    </div>
-  </div>
   <header class="page__header container header">
     <a class="header__logo" href="">
       <picture>
@@ -43,13 +37,15 @@
     </nav>
   </header>
   <main class="page__container main-index">
-    <section class="main-index__hero container hero">
-      <div class="hero__content">
-        <h1 class="hero__title title-hero">Функциональное питание для котов</h1>
-        <p class="hero__subtitle subtitle">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/hero/index-can-mobile.png" width="280px" height="270px"
-          alt="Банка кошачьего корма." />
-        <a class="hero__button button button--hero" href="#">Подобрать программу</a>
+    <section class="main-index__hero">
+      <div class="container hero">
+        <div class="hero__content">
+          <h1 class="hero__title title-hero">Функциональное питание для котов</h1>
+          <p class="hero__subtitle subtitle">Занялся собой? Займись котом!</p>
+          <img class="hero__image" src="img/hero/index-can-mobile.png" width="280px" height="270px"
+            alt="Банка кошачьего корма." />
+          <a class="hero__button button button--hero" href="#">Подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="programs container">
@@ -60,9 +56,10 @@
         <li class="programs__item programs-card">
           <article class="programs-card__content">
             <picture class="programs-card__icon">
-              <source class="programs-card__icon-smail" srcset="" media="">
-              <img class="programs-card__icon-xl" src="" alt="Изображение кошки.">
-            </picture>
+              <div class="programs__icon-poip"></div>
+              <!-- <source class="programs-card__icon-smail" srcset="img/programs/cat-slim-bg.svg" media="(min-width: 768px)"> -->
+              <!-- <img class="programs-card__icon-xl" src="img/programs/cat-slim.svg" alt="Изображение кошки."> -->
+            </picture> 
             <h3 class="programs-card__title">Похудение</h3>
             <p class="programs-card__description description">Ваш кот весит больше собаки и почти утратил способность
               лазить
@@ -105,8 +102,8 @@
               и готово.
             </p>
           </li>
-          <li class="advetages__item advetages__item--change">
-            <div class="advetages__square advetages__square--change"></div>
+          <li class="advetages__item advetages__item--eat">
+            <div class="advetages__square advetages__square--eat"></div>
             <p class="advetages__description description">Замените один-два приема обычной еды на наше функциональное
               питание.</p>
           </li>
@@ -119,7 +116,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="container">
+      <div class="container example__wrapper">
         <div class="exampl__item">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
@@ -160,16 +157,10 @@
         </div>
       </div>
     </section>
-    <div class="bad">
-      <div class="container">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quae voluptas id temporibus dolore a
-          perspiciatis, mollitia nihil voluptatibus quis!</p>
-      </div>
-    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
-      <div class="contacts__info">
+      <div class="contacts__info container">
         <h3 class="contacts__info-title">приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

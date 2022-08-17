@@ -1,9 +1,29 @@
 .programs-card {
+  position: relative;
+  padding: 24px 20px 18px;
   background-color: @basic-grey;
   list-style-type: none;
 }
 
+.programs-card__icon {
+
+  min-width: 50px;
+  min-height: 53px;
+}
+.programs__icon-poip {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @basic-green;
+  background-image: url("../img/programs/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 50px;
+}
+
 .programs-card__title {
+  position: relative;
+  min-height: 50px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -11,6 +31,13 @@
   line-height: 37px;
   text-transform: uppercase;
   color: @black;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 13px 0 13px 71px;
+}
+
+.programs-card__description {
+  margin: 0 0 38px 0;
 }
 
 .programs-card__button {

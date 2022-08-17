@@ -4,18 +4,23 @@
   // margin: 0;
   padding-top: 25px;
   padding-bottom: 40px;
-  background: @special-grey;
+  background-color: @special-grey;
   // box-sizing: border-box;
-  outline: 1px solid #bb3fb1;
+  
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     padding-top: 43px;
     padding-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
     padding-top: 0;
     padding-bottom: 85px;
+    background-color: @special-grey;
+    background-size: 120px 100%;
+    background-position: bottom;
     // background-position: ;
   }
 }
@@ -24,6 +29,7 @@
   // margin: 0;
   // padding: 25px 20px 40px 20px;
   // border: 1px solid #bb3fb1;
+  outline: 1px solid #bb3fb1;
 
   @media (min-width: @tablet-width) {
     // padding: 0 30px 56px 30px;

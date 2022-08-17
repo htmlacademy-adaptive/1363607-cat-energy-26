@@ -1,17 +1,7 @@
 .advetages {
-  // width: 320px;
   margin-bottom: 49px;
-  // padding: 0;
   box-sizing: border-box;
   border: 1px solid #bb3fb1;
-
-  // @media (min-width: @tablet-width) {
-  //     width: 768px;
-  // }
-  // @media (min-width: @desktop-width) {
-  //   width: 1440px;
-  //   padding: 0 110px 49px 110px;
-  // }
 }
 
 .title {
@@ -25,6 +15,11 @@
 
 .advetages__title {
   margin-bottom: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advetages__list {
@@ -53,34 +48,79 @@
   position: relative;
   align-items: center;
   margin-bottom: 20px;
-  // padding-left: 100px;
   box-sizing: border-box;
   border: 1px solid #bb3fb1;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (min-width: @tablet-width) {
-    height: 280px;
     margin-bottom: 37px;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px 2px 56px 0;
   }
 
   @media (min-width: @tablet-width) {
     &--natur {
       width: 230px;
+      &::after {
+        content: "1";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @basic-grey;
+      }
     }
 
     &--fast {
       width: 246px;
+      &::after {
+        content: "2";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @basic-grey;
+      }
     }
 
-    &--change {
+    &--eat {
       width: 247px;
+      &::after {
+        content: "3";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @basic-grey;
+      }
     }
 
     &--time {
       width: 249px;
+      &::after {
+        content: "4";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @basic-grey;
+      }
     }
   }
 }
@@ -91,6 +131,12 @@
   margin-right: 20px;
   background-color: @basic-green;
 
+  @media (min-width: @tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    margin-bottom: 31px;
+  }
+
   &--natur {
     background-image: url("../img/advetages/natur.svg");
     background-repeat: no-repeat;
@@ -98,23 +144,28 @@
   }
 
   &--fast {
-    background-image: url("../img/advetages/natur.svg");
+    background-image: url("../img/advetages/fast.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--change {
-    background-image: url("../img/advetages/natur.svg");
+  &--eat {
+    background-image: url("../img/advetages/eat.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--time {
-    background-image: url("../img/advetages/natur.svg");
+    background-image: url("../img/advetages/time.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 .advetages__description {
-  // padding-left: 100px;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 5;
+  }
 }
