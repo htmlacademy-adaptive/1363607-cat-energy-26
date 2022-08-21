@@ -36,7 +36,7 @@
     </nav>
   </header>
   <main class="page__container main-page">
-    <section class="catalog">
+    <section class="catalog container">
       <h1 class="main-page__title title">Каталог продукции</h1>
       <ul class="catalog__list">
 
@@ -44,7 +44,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/chicken-sm.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/chicken-tablet-sm.png" width="174"
+                    height="200" media="(min-width: 768px)">
+                  <img src="img/catalog/chicken-sm.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -72,7 +76,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/chicken-bg.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/chicken-tablet-bg.png" width="174"
+                    height="200" media="(min-width: 768px)">
+                  <img src="img/catalog/chicken-bg.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -100,7 +108,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/fish-sm.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/fish-tablet-sm.png" width="174" height="200"
+                    media="(min-width: 768px)">
+                  <img src="img/catalog/fish-sm" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -128,7 +140,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/fish-dg.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/fish-tablet-bg.png" width="174" height="200"
+                    media="(min-width: 768px)">
+                  <img src="img/catalog/fish-bg.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -156,7 +172,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/groats-sm.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/groats-tablet-sm.png" width="174" height="200"
+                    media="(min-width: 768px)">
+                  <img src="img/catalog/groats-sm.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -184,7 +204,11 @@
           <article class="card__card-box">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/groats-bg.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/groats-tablet-bg.png" width="174" height="200"
+                    media="(min-width: 768px)">
+                  <img src="img/catalog/groats-bg.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -209,10 +233,14 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="card__card-box">
+          <article class="card__card-box ">
             <div class="card__item">
               <figure class="card__item-image">
-                <img src="../img/catalog/rice-sm.jpg" width="140px" height="112px" alt="" />
+                <picture>
+                  <source class="header__logo--image" srcset="img/catalog/rice-tablet-sm.png" width="174" height="200"
+                    media="(min-width: 768px)">
+                  <img src="img/catalog/rice-sm.png" width="140px" height="112px" alt="" />
+                </picture>
               </figure>
               <div class="card__item-info">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -237,15 +265,13 @@
         </li>
 
         <li class="catalog__card card">
-          <article class="card__card-box">
-            <div class="card__item">
-              <figure class="card__item-image">
-                <span class="card__icon"></span>
-              </figure>
-              <h3 class="card-title">Показать еще 100500 товаров</h3>
+          <article class="card__card-box card__card-box--add">
+            <div class="card__item card__item--add">
+              <a href="#" class="card___toggle"><span class="visually-hidden"></span></a>
+              <h3 class="card__title card__title--add">Показать еще 100500 товаров</h3>
               <p class="card__discription">На самом деле вкусов гораздо больше!</p>
             </div>
-            <a href="#" class="card__button button">Показать все</a>
+            <a href="#" class="card__button button card__button--add">Показать все</a>
           </article>
         </li>
       </ul>

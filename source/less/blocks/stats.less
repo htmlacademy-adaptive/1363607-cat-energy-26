@@ -1,5 +1,9 @@
 .stats {
   width: 142px;
+  margin: 0 0 9px 0;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .stats__item {
@@ -14,6 +18,12 @@
   margin-bottom: 2px;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding: 7px 0 9px 0;
+    border-bottom: 1px solid #CDCDCD;
   }
 }
 
