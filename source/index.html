@@ -12,28 +12,27 @@
   <header class="page__header container header">
     <a class="header__logo" href="">
       <picture>
-        <source srcset="img/logo/logo-tablet.svg" media="(min-width: 768px)" , srcset="img/logo/logo-desktop.svg"
-          media="(min-width: 1440px)">
-        <img src="img/logo/logo.svg" alt="Логотип.">
+        <source class="header__logo--image" srcset="img/logo/logo-tablet.svg" width="174" height="52"
+          media="(min-width: 768px)">
+        <img class="header__logo--image" src="img/logo/logo.svg" width="191" height="38" alt="Логотип.">
       </picture>
     </a>
-    <nav class="header__navigation navigation">
-      <div class="navigation__item">
-        <span class="navigation__icon">
-          <span class="visually-hidden">открыть или закрыть меню.</span>
-        </span>
+    <nav class="header__navigation navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
+          меню.</span></button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href=" catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href=" form.html">Подбор программы</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navigation__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Подбор программы</a>
-        </li>
-      </ul>
     </nav>
   </header>
   <main class="page__container main-index">
@@ -42,8 +41,12 @@
         <div class="hero__content">
           <h1 class="hero__title title-hero">Функциональное питание для котов</h1>
           <p class="hero__subtitle subtitle">Занялся собой? Займись котом!</p>
-          <img class="hero__image" src="img/hero/index-can-mobile.png" width="280px" height="270px"
-            alt="Банка кошачьего корма." />
+          <picture>
+            <source class="hero__image" srcset="img/hero/can-tablet.png" width="709px" height="609px"
+              media="(min-width: 768px)">
+            <img class="hero__image" src="img/hero/index-can-mobile.png" width="280px" height="270px"
+              alt="Банка кошачьего корма." />
+          </picture>
           <a class="hero__button button button--hero" href="#">Подобрать программу</a>
         </div>
       </div>
@@ -215,7 +218,7 @@
     </div>
   </footer>
 
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

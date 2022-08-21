@@ -1,6 +1,31 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: @White;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.header__logo {
+  width: 191px;
+  height: 65px;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
 }
