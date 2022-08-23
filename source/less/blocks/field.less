@@ -5,10 +5,15 @@
 .field__label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .field-name {
-  width: 228px;
+  // max-width: 228px;
+  width: 100%;
+  margin: 0;
+  margin-left: 13px;
+  padding: 13px 15px 14px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -16,4 +21,5 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+  box-sizing: border-box;
 }
