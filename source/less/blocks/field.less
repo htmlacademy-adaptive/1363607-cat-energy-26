@@ -1,4 +1,5 @@
 .field {
+  position: relative;
   grid-column: 1/-1;
 }
 
@@ -9,7 +10,7 @@
 }
 
 .field-name {
-  // max-width: 228px;
+  max-width: 229px;
   width: 100%;
   margin: 0;
   margin-left: 13px;
@@ -22,4 +23,13 @@
   text-transform: uppercase;
   color: @dark-grey;
   box-sizing: border-box;
+}
+
+.field__icon {
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 7px;
+  border: none;
+  background-color: @White;
 }
