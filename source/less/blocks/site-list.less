@@ -25,9 +25,13 @@
     border-bottom: 1px solid @light-grey;
   }
 
-  &--current, &:active {
+  &--current {
     border-bottom: 2px solid @basic-green;
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @basic-green;
+    }
   }
+  
   &:hover {
     opacity: 0.6;
   }
