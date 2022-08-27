@@ -24,15 +24,19 @@
   padding-top: 11px;
   padding-bottom: 14px;
   box-sizing: border-box;
-  outline: 1px solid #bb3fb1;
 
   &--add  {
     padding: 25px 0;
     justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+      background-color: @White;
+      border: 2px solid @basic-grey;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 37px 39px 37px;
+    padding: 0 32px 39px 32px;
   }
 }
 
@@ -133,6 +137,7 @@
   @media (min-width: @desktop-width) {
     width: 172px;
     height: 196px;
+    padding: 0 4px;
   }
 }
 
@@ -148,10 +153,6 @@
   &--add {
     color: @dark-grey;
     background-color: @basic-grey;
-
-    @media (min-width: @desktop-width) {
-      // padding: 10px 92px;
-    }
   }
 }
 
