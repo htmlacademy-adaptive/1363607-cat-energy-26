@@ -1,69 +1,88 @@
 .hero {
   position: relative;
-  z-index: 50;
-  outline: 1px solid #bb3fb1;
+  z-index: 4;
 
   @media (min-width: @tablet-width) {
-    // padding: 27px 20px 20px 108px;
+    padding-bottom: 513px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 190px;
   }
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   width: 100%;
   margin: 0;
-  // text-align: center;
-  outline: 1px solid #bb3fb1;
 
   @media (min-width: @tablet-width) {
     width: 414px;
     margin: 0;
-    text-align: left;
+    padding-left: 91px;
+    align-items: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
   }
 }
 
 .hero__title {
   width: 250px;
-  margin: 0 auto 25px auto;
-
-}
-
-.title-hero {
-  position: relative;
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 36px;
   text-align: center;
-  color: @White;
+  margin: 0 auto 25px 0;
   z-index: 5;
 
   @media (min-width: @tablet-width) {
-    font-size: 50px;
-    line-height: 60px;
-    color: @black;
+    width: 414px;
+    text-align: left;
+    letter-spacing: -1px;
+    margin: 0 auto 41px auto;
   }
 }
 
 .hero__subtitle {
   margin: 0 auto 29px auto;
+
+  @media (min-width: @tablet-width) {
+    width: 414px;
+    text-align: left;
+    margin-bottom: 49px;
+  }
 }
 
 .hero__button {
   text-align: center;
-  padding: 11px 0;
-  color: @White;
-  background-color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 5;
+  }
 }
 
 .hero__image {
-  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 270px;
+  text-align: center;
   z-index: 5;
 
   @media (min-width: @tablet-width) {
-    order: 4;
+    position: absolute;
+    top: 202px;
+    right: 36px;
+    max-width: 708px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    max-width: 522px;
+    height: 499px;
+    top: calc(40% - 499px/2);
+    right: calc(42% - 522px/2);
+    z-index: 5;
   }
 }

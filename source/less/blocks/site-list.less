@@ -19,8 +19,9 @@
   padding: 22px 20px;
   padding-bottom: 24px;
   text-align: center;
-  background-color: @White;
+  // background-color: @White;
   border-top: 1px solid @light-grey;
+
   &:last-child {
     border-bottom: 1px solid @light-grey;
   }
@@ -30,8 +31,12 @@
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
     }
+
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @White;
+    }
   }
-  
+
   &:hover {
     opacity: 0.6;
   }
@@ -71,5 +76,6 @@
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
+    color: @White;
   }
 }

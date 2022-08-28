@@ -19,20 +19,26 @@
     }
   }
 
+  &--hero {
+    color: @White;
+  }
+
+  &--hero,
   &--large {
     @media (min-width: @tablet-width) {
       font-size: 60px;
       line-height: 60px;
+      color: @black;
     }
   }
 
   &--smol {
     font-size: 24px;
     line-height: 24px;
-  
+
     @media (min-width: @tablet-width) {
       font-size: 36px;
       line-height: 36px;
-    } 
+    }
   }
 }
