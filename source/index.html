@@ -145,30 +145,34 @@
           </div>
         </div>
 
-        <div class="example__slider slider-range">
+        <div class="example__slider">
+          <div class="slider-range">
+            <div class="slider-range__item">
 
-          <div class="slider-range__item">
+              <picture class="slider-range__picture slider-range__picture--before">
+                <source srcset="img/slider/cat-before-bg.png" media="(min-width: 768px)">
+                <img class="slider-range__image" src="img/slider/cat-before.png" alt="Толстый кот.">
+              </picture>
 
-            <picture class="slider-range__picture">
-              <source class="slider-range__image" srcset="img/slider/cat-before.png" width="140" height="232"
-                media="(min-width: 768px)">
-              <img class="slider-range__image" src="img/slider/cat-before.png" width="140" height="232"
-                alt="Толстый кот.">
-            </picture>
+              <picture class="slider-range__picture slider-range__picture--after">
+                <source srcset="img/slider/cat-after-bg.png" media="(min-width: 768px)">
+                <img class="slider-range__image" src="img/slider/cat-after.png" alt="Стройный кот.">
+              </picture>
 
-            <picture class="slider-range__picture">
-              <source class="slider-range__image" srcset="img/slider/cat-after.png" width="140" height="232"
-                media="(min-width: 768px)">
-              <img class="slider-range__image" src="img/slider/cat-after.png" width="140" height="232"
-                alt="Стройный кот.">
-            </picture>
+            </div>
 
-          </div>
-
-          <div class="slider-range__scale">
-            <span class="slider-range__scale-min"></span>
-            <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
-            <span class="slider-range__scale-max"></span>
+            <div class="slider-range__scale">
+              <div class="slider-range__bar">
+                <!-- <div class="slider-range__button"> -->
+                <button class="slider-range__togle slider-range__togle--left" type="button">
+                  <span class="visually-hidden">Двигать картинку в лево.</span>
+                </button>
+                <button class="slider-range__togle slider-range__togle--right" type="button">
+                  <span class="visually-hidden">Двигать картинку в право.</span>
+                </button>
+                <!-- </div> -->
+              </div>
+            </div>
           </div>
         </div>
 
