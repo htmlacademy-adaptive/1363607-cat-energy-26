@@ -6,7 +6,7 @@
   padding-bottom: 40px;
   background-color: @special-grey;
   // box-sizing: border-box;
-  
+
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -46,15 +46,44 @@
 .example__title {
   margin: 0 0 40px 0;
   border: 1px solid #bb3fb1;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .example__description {
   margin-bottom: 20px;
   border: 1px solid #bb3fb1;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__promo {
   margin: 0 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 75px;
+    margin: 0;
+  }
+}
+
+
+
+.example__slider {
+  @media (min-width: @tablet-width) {
+    padding: 74px;
+  }
 }
 
 .bad {

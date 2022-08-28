@@ -58,32 +58,31 @@
 
         <li class="programs__item programs-card">
           <article class="programs-card__content">
-            <picture class="programs-card__icon">
-              <div class="programs__icon-poip"></div>
-              <!-- <source class="programs-card__icon-smail" srcset="img/programs/cat-slim-bg.svg" media="(min-width: 768px)"> -->
-              <!-- <img class="programs-card__icon-xl" src="img/programs/cat-slim.svg" alt="Изображение кошки."> -->
-            </picture>
+            <div class="programs-card__icon"></div>
             <h3 class="programs-card__title">Похудение</h3>
             <p class="programs-card__description description">Ваш кот весит больше собаки и почти утратил способность
               лазить
               по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs-card__button button button--arow" href="">Каталог slim</a>
+            <a class="programs-card__button button button--arow" href="">Каталог slim<svg class="button__icon"
+                width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#000" stroke-width="2" d="M0 6h18" />
+                <path d="m24 6-6.75 5.196V.804L24 6Z" fill="#000" /></svg></a>
           </article>
         </li>
 
         <li class="programs__item programs-card">
           <article class="programs-card__content">
-            <picture class="programs-card__icon">
-              <source class="programs-card__icon-smail" srcset="" media="">
-              <img class="programs-card__icon-xl" src="" alt="Изображение кошки.">
-            </picture>
+            <div class="programs-card__icon programs-card__icon--puma"></div>
             <h3 class="programs-card__title">Набор массы</h3>
             <p class="programs-card__description description">Заработать авторитет среди дворовых котов и даже собак?
               Серия
               Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs-card__button button button--arow" href="">Каталог PRO</a>
+            <a class="programs-card__button button button--arow" href="">Каталог PRO<svg class="button__icon" width="24"
+                height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#000" stroke-width="2" d="M0 6h18" />
+                <path d="m24 6-6.75 5.196V.804L24 6Z" fill="#000" /></svg></a>
           </article>
         </li>
 
@@ -121,7 +120,7 @@
     <section class="example">
       <div class="container example__wrapper">
         <div class="exampl__item">
-          <h2 class="example__title title">Живой пример</h2>
+          <h2 class="example__title title title--large">Живой пример</h2>
           <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
             на
             Cat Energy Slim.
@@ -132,15 +131,17 @@
             <div class="promo__wrapper">
               <div class="promo__item">
                 <strong class="promo__title">5 КГ</strong>
-                <span class="promo__description description">снижение веса</span>
+                <span class="promo__description promo__description--left description description--smol">снижение
+                  веса</span>
               </div>
 
               <div class="promo__item">
                 <strong class="promo__title">60 ДНЕЙ</strong>
-                <span class="promo__description description">затрачено времени</span>
+                <span class="promo__description promo__description--right description description--smol">затрачено
+                  времени</span>
               </div>
             </div>
-            <p class="promo__subtitle subtitle">Затраты на питание: 15 000 РУБ. </p>
+            <p class="promo__subtitle subtitle subtitle--medium">Затраты на питание: 15 000 РУБ. </p>
           </div>
         </div>
 
@@ -152,9 +153,9 @@
               <img src="" alt="Стройный кот." class="slider-range__image-after">
             </div>
             <div class="slider-range__scale">
-              <span class="slider-range__scale-min">Было</span>
+              <span class="slider-range__scale-min"></span>
               <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
-              <span class="slider-range__scale-max">Стало</span>
+              <span class="slider-range__scale-max"></span>
             </div>
           </div>
         </div>

@@ -24,4 +24,28 @@
       font-size: 20px;
     }
   }
+
+  &--arow {
+    font-family: "Oswald";
+    font-weight: 500;
+    padding: 4px 47px 4px 2px;
+    font-size: 16px;
+    line-height: 16px;
+    color: @black;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.button__icon {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-6px);
+  right: 8px;
 }
