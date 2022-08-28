@@ -145,20 +145,33 @@
           </div>
         </div>
 
-        <div class="exampl__item">
-          <div class="example__slider slider-range">
-            <div class="slider-range__picture">
-              <img src="./img/slider/cat-before.png" width="280px" height="232px" alt="Толстый кот."
-                class="slider-range__image-before">
-              <img src="" alt="Стройный кот." class="slider-range__image-after">
-            </div>
-            <div class="slider-range__scale">
-              <span class="slider-range__scale-min"></span>
-              <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
-              <span class="slider-range__scale-max"></span>
-            </div>
+        <div class="example__slider slider-range">
+
+          <div class="slider-range__item">
+
+            <picture class="slider-range__picture">
+              <source class="slider-range__image" srcset="img/slider/cat-before.png" width="140" height="232"
+                media="(min-width: 768px)">
+              <img class="slider-range__image" src="img/slider/cat-before.png" width="140" height="232"
+                alt="Толстый кот.">
+            </picture>
+
+            <picture class="slider-range__picture">
+              <source class="slider-range__image" srcset="img/slider/cat-after.png" width="140" height="232"
+                media="(min-width: 768px)">
+              <img class="slider-range__image" src="img/slider/cat-after.png" width="140" height="232"
+                alt="Стройный кот.">
+            </picture>
+
+          </div>
+
+          <div class="slider-range__scale">
+            <span class="slider-range__scale-min"></span>
+            <button class="slider-range__togle"><span class="visually-hidden">Изменить картинку.</span></button>
+            <span class="slider-range__scale-max"></span>
           </div>
         </div>
+
       </div>
     </section>
   </main>
