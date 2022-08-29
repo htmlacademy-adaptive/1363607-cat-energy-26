@@ -1,9 +1,11 @@
 .stats {
   width: 142px;
   margin: 0 0 9px 0;
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+
   &--additional {
     width: 100%;
     margin-bottom: 15px;
@@ -24,18 +26,20 @@
   line-height: 16px;
   color: @dark-grey;
   margin-bottom: 2px;
+
   &:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: @tablet-width) {
-    // width: 100%;
     font-size: 16px;
     padding: 7px 0 9px 0;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid @special-light-grey;
   }
+
   &--additional {
     margin-bottom: 13px;
+  
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
       border-bottom: none;

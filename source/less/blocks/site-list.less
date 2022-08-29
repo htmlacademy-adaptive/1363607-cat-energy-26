@@ -14,12 +14,12 @@
   }
 }
 
-.site-list__item {
+.site-list__item,
+.site-list__item-hero {
   display: block;
   padding: 22px 20px;
   padding-bottom: 24px;
   text-align: center;
-  // background-color: @White;
   border-top: 1px solid @light-grey;
 
   &:last-child {
@@ -28,12 +28,9 @@
 
   &--current {
     border-bottom: 2px solid @basic-green;
+
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
-    }
-
-    @media (min-width: @desktop-width) {
-      border-bottom: 2px solid @White;
     }
   }
 
@@ -60,7 +57,17 @@
   }
 }
 
-.site-list__link {
+.site-list__item-hero {
+  &--current {
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @White;
+    }
+  }
+
+}
+
+.site-list__link, 
+.site-list__link-hero {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -76,6 +83,11 @@
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
+  }
+}
+
+.site-list__link-hero {
+  @media (min-width: @desktop-width) {
     color: @White;
   }
 }
