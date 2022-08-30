@@ -1,0 +1,31 @@
+.subtitle {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: @White;
+  z-index: 5;
+
+  &--small {
+    line-height: 18px;
+  }
+
+  &--large {
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &--medium {
+    line-height: 20px;
+    color: @black;
+  
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

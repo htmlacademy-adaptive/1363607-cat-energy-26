@@ -1,0 +1,41 @@
+.field {
+  position: relative;
+}
+
+.field__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field-name {
+  max-width: 229px;
+  width: 100%;
+  margin: 0;
+  margin-left: 13px;
+  padding: 13px 15px 14px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @dark-grey;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    max-width: 567px;
+    padding: 11px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 7px;
+  border: none;
+  background-color: @White;
+}
