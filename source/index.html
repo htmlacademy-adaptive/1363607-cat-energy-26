@@ -12,8 +12,8 @@
   <header class="page__header container header">
     <a class="header__logo" href="">
       <picture>
-        <source srcset="img/logo/logo-desktop.svg" media="(min-width: 1440px)">
-        <source srcset="img/logo/logo-tablet.svg" media="(min-width: 768px)">
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
         <img class="header__logo--image" src="img/logo/logo.svg" alt="Логотип.">
       </picture>
     </a>
@@ -42,9 +42,10 @@
           <h1 class="hero__title title title--hero">Функциональное питание для котов</h1>
           <p class="hero__subtitle subtitle subtitle--medium">Занялся собой? Займись котом!</p>
           <picture>
-            <source srcset="img/hero/can-desktop.png" media="(min-width: 1440px)">
-            <source srcset="img/hero/can-tablet.png" media="(min-width: 768px)">
-            <img class="hero__image" src="img/hero/can-mobile.png" alt="Банка кошачьего корма." />
+            <source media="(min-width: 1440px)" srcset="img/hero/can-desktop.png 1x, img/hero/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/hero/can-tablet.png 1x, img/hero/can-tablet@2x.png 2x">
+            <img class="hero__image" src="img/hero/can-mobile.png" srcset="img/hero/can-mobile@2x.png 2x"
+              alt="Банка кошачьего корма." />
           </picture>
           <a class="hero__button button button--hero" href="#">Подобрать программу</a>
         </div>
@@ -148,14 +149,18 @@
           <div class="slider-range">
             <div class="slider-range__item">
 
-              <picture class="slider-range__picture slider-range__picture--before">
-                <source srcset="img/slider/cat-before-bg.png" media="(min-width: 768px)">
-                <img class="slider-range__image" src="img/slider/cat-before.png" alt="Толстый кот.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/cat-before-bg.png 1x, img/slider/cat-before-bg@2x.png 2x">
+                <img class="slider-range__image slider-range__image--before" src="img/slider/cat-before.png"
+                  srcset="img/slider/cat-before@2x.png 2x" alt="Толстый кот.">
               </picture>
 
-              <picture class="slider-range__picture slider-range__picture--after">
-                <source srcset="img/slider/cat-after-bg.png" media="(min-width: 768px)">
-                <img class="slider-range__image" src="img/slider/cat-after.png" alt="Стройный кот.">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/cat-after-bg.png 1x, img/slider/cat-after-bg@2x.png 2x">
+                <img class="slider-range__image slider-range__image--after" src="img/slider/cat-after.png"
+                  srcset="img/slider/cat-after@2x.png 2x" alt="Стройный кот.">
               </picture>
 
             </div>

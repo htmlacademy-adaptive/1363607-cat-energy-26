@@ -100,7 +100,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 290px;
-  background: url("../img/catalog/cat-backpack.png");
+  background-image: url("../img/catalog/mobile/cat-backpack.png");
   background-position: 50% top;
   background-size: 280px 290px;
   background-repeat: no-repeat;
@@ -109,19 +109,34 @@
   cursor: pointer;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/mobile/cat-backpack@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: @tablet-width) {
     padding-bottom: 200px;
-    background: url("../img/background/cat-add-bg.png");
+    background-image: url("../img/background/cat-add-bg.png");
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/tablet/cat-add-bg@2x.png");
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/background/cat-medium.png");
+    background-image: url("../img/catalog/back-cat-desktop.png");
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-cat-desktop@2x.png");
+      background-size: 246px auto;
+    }
   }
 
   &::after {
