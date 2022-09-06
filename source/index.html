@@ -43,6 +43,10 @@
           <h1 class="hero__title title title--hero">Функциональное питание для котов</h1>
           <p class="hero__subtitle subtitle subtitle--medium">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero/can-desktop.webp 1x, img/hero/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/can-tablet.webp 1x, img/hero/can-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/hero/can-mobile.webp 1x, img/hero/can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/hero/can-desktop.png 1x, img/hero/can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/hero/can-tablet.png 1x, img/hero/can-tablet@2x.png 2x">
             <img class="hero__image" src="img/hero/can-mobile.png" srcset="img/hero/can-mobile@2x.png 2x"
@@ -65,11 +69,7 @@
               лазить
               по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs-card__button button button--arow" href="">Каталог slim
-              <svg class="button__icon" width="24" height="12">
-                <use href="img/sprite.svg#icon-arow"></use>
-              </svg>
-            </a>
+            <a class="programs-card__button button button--arow" href="">Каталог slim</a>
           </article>
         </li>
 
@@ -81,10 +81,7 @@
               Серия
               Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs-card__button button button--arow" href="">Каталог PRO<svg class="button__icon" width="24"
-                height="12">
-                <use href="img/sprite.svg#icon-arow"></use>
-              </svg></a>
+            <a class="programs-card__button button button--arow" href="">Каталог PRO</a>
           </article>
         </li>
 
@@ -195,7 +192,7 @@
     <div class="main-footer__footer">
       <div class="container footer">
         <a class="footer__logo-text" href="#">
-          <svg class="footer__logo-image" width="128" height="24">
+          <svg class="footer__logo-icon" width="128" height="24">
             <use href="img/sprite.svg#icon-footer-logo"></use>
           </svg>
           <span class="visually-hidden">Логотип Html академия.</span>
@@ -206,7 +203,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте.</span>
@@ -214,7 +211,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе.</span>
@@ -222,7 +219,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#icon-telegram"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Телеграме.</span></a>
@@ -234,7 +231,7 @@
         <div class="footer__copyright">
           <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo-image" width="27" height="34">
+            <svg class="copyright__logo-icon" width="27" height="34">
               <use href="img/sprite.svg#icon-logo-html-academy"></use>
             </svg>
           </a>

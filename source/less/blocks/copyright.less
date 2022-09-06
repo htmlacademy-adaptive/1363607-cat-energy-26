@@ -8,6 +8,14 @@
     padding: 0;
     max-width: 163px;
   }
+
+  &:hover :not(.copyright__text) {
+    fill: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -18,4 +26,8 @@
   line-height: 18px;
   color: @dark-grey;
   margin: 0;
+}
+
+.copyright__logo-icon {
+  fill: @special-grey-2;
 }

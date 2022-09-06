@@ -44,20 +44,24 @@
     font-size: 16px;
     line-height: 16px;
     color: @black;
+    background-image: url("../../img/programs/arow.svg");
+    background-size: 24px 12px;
+    background-position: 118px 13px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url("../../img/programs/arow-activ.svg");
+      background-size: 32px 12px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
     }
   }
-}
-
-.button__icon {
-  position: absolute;
-  // content: "";
-  width: 24px;
-  height: 12px;
-  top: 50%;
-  transform: translateY(-6px);
-  right: 8px;
 }
