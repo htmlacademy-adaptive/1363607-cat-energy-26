@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <base href="https://htmlacademy-adaptive.github.io/1363607-cat-energy-26/7/">
+</head>
+
+<body class="page__body">
+  <header class="page__header container header">
+    <a class="header__logo" href="">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="header__logo--image" src="img/logo/logo.svg" alt="Логотип.">
+      </picture>
+    </a>
+    <nav class="header__navigation navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
+          меню.</span></button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href=" catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page__container main-page">
+
+    <section class="main-page__order-form">
+
+      <div class="container">
+        <div class="main-page__header">
+          <h1 class="main-page__title title title--large">Подбор программы</h1>
+          <p class="main-page__subtitle subtitle subtitle--small subtitle--large">Заполните анкету, и мы подберем
+            программу питания для вашего кота</p>
+        </div>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru/" class="group" method="get">
+
+        <div class="container">
+          <div class="group__header">
+            <fieldset class="group__items">
+              <legend class="visually-hidden">Имя, вес, возраст.</legend>
+              <ul class="group__list">
+                <li class="group__field field">
+                  <label class="field__label label">ИМЯ:*
+                    <input class="field-name" type="text" name="name" placeholder="БАРСИК" required>
+                  </label>
+                </li>
+
+                <li class="group__field field">
+                  <label class="field__label label">ВЕС(КГ):*
+                    <input class="field-name" type="text" name="name" placeholder="7" required>
+                  </label>
+                </li>
+
+                <li class="group__field field">
+                  <label class="field__label label">ВОЗРАСТ(ЛЕТ):*
+                    <input class="field-name" type="text" name="name" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="group__items">
+              <legend class="visually-hidden">Выбор назначения корма.</legend>
+              <ul class="group__list group__list--radio">
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="product" value="shaving-supplies"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label label label--form">Похудение</span>
+                  </label>
+                </li>
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="product" value="care-products">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Набор массы</span>
+                  </label>
+                </li>
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="product" value="accessories">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Не знаю (нужен Ваш совет)</span>
+                  </label>
+                </li>
+
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="group__box">
+          <div class="container">
+            <fieldset class="group__items group__items--desctop">
+
+              <legend class="group__title group__title--contact title title--medium ">Контакеные данные (владельца кота)
+              </legend>
+
+              <ul class="group__list group__list--inner">
+
+                <li class="group__field field">
+                  <label class="field__label label">E-MAIL:*
+                    <input class="field-name" placeholder="kuklachev@gmail.com" type="email" name="field-email"
+                      required>
+                  </label>
+                  <button class="field__icon" type="button">
+                    <svg width="20" height="15">
+                      <use href="img/sprite.svg#icon-message"></use>
+                    </svg>
+                    <span class="visually-hidden">Введите адрес электронной
+                      почты.</span></button>
+                </li>
+
+                <li class="group__field field">
+                  <label class="field__label label">ТЕЛЕФОН:*
+                    <input class="field-name" placeholder="8(960) 900-60-90" type="phone" name="field-phone" required>
+                  </label>
+                  <button class="field__icon" type="button">
+                    <svg width="20" height="21">
+                      <use href="img/sprite.svg#icon-fone"></use>
+                    </svg>
+                    <span class="visually-hidden">Введите номер телефона.</span>
+                  </button>
+                </li>
+              </ul>
+
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="group__box">
+          <div class="container line">
+            <fieldset class="group__items group__items--desctop">
+
+              <legend class="group__title title title--medium ">Комментарий</legend>
+              <div class="group__list group__list--inner">
+                <textarea class="group__comment" name="comment" id="comment-field" cols="30" rows="10"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="group__box">
+          <div class="container">
+            <fieldset class="group__items group__items--desctop">
+              <legend class="group__title title title--medium ">Дополнительно</legend>
+
+              <ul class="group__list group__list--check">
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Сахарозаменитель</span>
+                  </label>
+                </li>
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="drinking-water">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">питьевая вода</span>
+                  </label>
+                </li>
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="milk">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Молоко</span>
+                  </label>
+                </li>
+
+                <li class="group__control">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="vitamins">
+                    <span class="control__mark"></span>
+                    <span class="control__label label">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="group__wrapper">
+            <button class="group__button button--primary">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <p class="group__required-fields">* — Обязательные поля</p>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__contacts contacts">
+      <div class="container">
+        <div class="contacts__info">
+          <h3 class="contacts__info-title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+      <iframe class="contacts__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
+        width="100%" height="400" frameborder="0"></iframe>
+    </div>
+    <div class="main-footer__footer">
+      <div class="container footer">
+        <a class="footer__logo-text" href="#">
+          <svg class="footer__logo-image" width="128" height="24">
+            <use href="img/sprite.svg#icon-footer-logo"></use>
+          </svg>
+          <span class="visually-hidden">Логотип Html академия.</span>
+        </a>
+
+        <div class="footer__social social">
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="28" height="22">
+                  <use href="img/sprite.svg#icon-vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="28" height="22">
+                  <use href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Ютубе.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg width="28" height="22">
+                  <use href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме.</span></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer__copyright">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__logo-image" width="27" height="34">
+              <use href="img/sprite.svg#icon-logo-html-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
