@@ -25,11 +25,30 @@
   }
 }
 
+.footer__logo-icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__social {
   width: 100%;
   border-bottom: 1px solid #D9D9D9;
 
   @media (min-width: @tablet-width) {
     border: none;
+  }
+}
+
+.footer__copyright {
+  padding: 22px 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    max-width: 163px;
   }
 }
