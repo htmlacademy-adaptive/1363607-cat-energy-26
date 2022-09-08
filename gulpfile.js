@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -118,6 +118,11 @@ const server = (done) => {
   done();
 }
 
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
@@ -125,6 +130,44 @@ const watcher = () => {
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
+
+
+//build
+
+const build = gulp.series (
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel (
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    creatWebp
+  ),
+);
+
+
+//Default
+
+default gulp.series (
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel (
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    creatWebp
+  ),
+  gulp.series (
+    server,
+    watcher
+  )
+);
 
 
 export default gulp.series(
