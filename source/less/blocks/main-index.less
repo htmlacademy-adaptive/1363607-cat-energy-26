@@ -20,8 +20,13 @@
     background-size: 320px auto;
   }
 
+  @media (min-width: @tablet-width) {
+    background: @White;
+    padding-top: 39px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 87px;
+    padding-top: 90px;
     padding-bottom: 82px;
   }
 
@@ -29,7 +34,7 @@
     @media (min-width: @desktop-width) {
       content: "";
       position: absolute;
-      top: -140px;
+      top: -134px;
       right: 0;
       width: 50%;
       height: 696px;
@@ -60,16 +65,12 @@
       content: "";
       display: block;
       position: absolute;
-      top: -139px;
+      top: -131px;
       right: 0;
       width: 50%;
       height: 694px;
       background: @transparent-green;
       z-index: 1;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    background: @White;
   }
 }

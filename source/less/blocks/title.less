@@ -21,6 +21,14 @@
 
   &--hero {
     color: @White;
+
+    @media (min-width: @tablet-width) {
+      letter-spacing: -0.5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      letter-spacing: -0.2px;
+    }
   }
 
   &--hero,

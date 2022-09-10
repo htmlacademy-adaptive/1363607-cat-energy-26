@@ -31,7 +31,7 @@
 
 .hero__title {
   text-align: center;
-  margin: 0 0 23px 0;
+  margin: 0 0 25px 0;
   z-index: 5;
 
   @media (min-width: @tablet-width) {
@@ -43,12 +43,16 @@
 }
 
 .hero__subtitle {
-  margin: 0 auto 24px;
+  margin: 0 auto 28px;
 
   @media (min-width: @tablet-width) {
     width: 414px;
     text-align: left;
-    margin-bottom: 49px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -70,18 +74,18 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 202px;
-    right: 36px;
-    max-width: 708px;
-    height: 609px;
+    top: 201px;
+    right: 30px;
+    max-width: 674px;
+    height: 605px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     max-width: 522px;
     height: 499px;
-    top: calc(40% - 499px/2);
-    right: calc(42% - 522px/2);
+    top: -80px;
+    right: 350px;
     z-index: 5;
   }
 }
