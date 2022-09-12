@@ -1,7 +1,11 @@
 .additional-items {
   position: relative;
   width: 100%;
-  padding: 25px 0 35px 0;
+  padding: 68px 0 35px 0;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 75px;
+  }
 
   &::before {
     content: "";
@@ -14,7 +18,11 @@
     z-index: 1;
 
     @media (min-width: @tablet-width) {
-      top: 49px;
+      top: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 100px;
     }
   }
 }
@@ -51,15 +59,17 @@
     width: 446px;
     padding-left: 68px;
     padding-right: 37px;
-    margin-left: -37px;
+    margin-left: -31px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    width: 414px;
-    padding-left: 37px;
+    width: 416px;
+    padding-left: 39px;
     padding-right: 37px;
-    box-sizing: border-box;
+    margin-left: -39px;
+    margin-bottom: 80px;
+    // box-sizing: border-box;
   }
 }
 
