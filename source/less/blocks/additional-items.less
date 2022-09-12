@@ -1,7 +1,11 @@
 .additional-items {
   position: relative;
   width: 100%;
-  padding: 68px 0 35px 0;
+  padding: 25px 0 35px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 67px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 75px;
@@ -49,7 +53,7 @@
 
 .additional-items__title {
   width: 268px;
-  margin: 0 0 36px -20px;
+  margin: 0 0 34px -20px;
   padding-left: 20px;
   padding-right: 22px;
   background-color: @White;
@@ -60,6 +64,7 @@
     padding-left: 68px;
     padding-right: 37px;
     margin-left: -31px;
+    margin-bottom: 90px;
     box-sizing: border-box;
   }
 
@@ -89,12 +94,17 @@
 
 .additional-items__card {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-top: 1px solid @special-grey-3;
   box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid @special-grey-3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
