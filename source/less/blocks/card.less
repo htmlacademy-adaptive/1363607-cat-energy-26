@@ -15,15 +15,15 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: @special-grey-1;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 1px;
+  //   background-color: @special-grey-1;
+  // }
 }
 
 .card__card-box {
@@ -95,6 +95,20 @@
 }
 
 .card__additional {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  // box-shadow: 0 0 0 1.5px @special-grey-1;
+  border-top: 1px solid @special-grey-1;
+  border-bottom: 1px solid @special-grey-1;
+  // &:first-child {
+  //   border-top: 1px solid @special-grey-1;
+  // }
+  margin-top: -1px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 15px;
     padding-bottom: 17px;
