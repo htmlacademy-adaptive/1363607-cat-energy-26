@@ -88,12 +88,19 @@
     padding: 25px 38px 28px;
     box-shadow: none;
     border: 1px solid @special-grey-1;
+
     background-color: @White;
   }
 
   @media (min-width: @desktop-width) {
     padding: 15px 0 16px;
+    border: none;
+    border-top: 1px solid @special-grey-1;
     background-color: @White;
+
+    &:last-child {
+      border-bottom: 1px solid @special-grey-1;
+    }
   }
 }
 
@@ -193,16 +200,16 @@
     margin-right: 6px;
   }
 
-  &--add {
-    color: @dark-grey;
-    background-color: @basic-grey;
-  }
-
   &--additional {
     @media (min-width: @desktop-width) {
       margin-left: 0;
       margin-right: 0;
     }
+  }
+
+  &--add {
+    color: @dark-grey;
+    background-color: @basic-grey;
   }
 }
 

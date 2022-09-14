@@ -8,12 +8,12 @@
   align-items: center;
 }
 
-.field-name {
+.field__name {
   max-width: 229px;
   width: 100%;
   margin: 0;
-  margin-left: 13px;
-  padding: 13px 15px 14px;
+  margin-left: 14px;
+  padding: 11px 15px 13px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -25,16 +25,32 @@
 
   @media (min-width: @tablet-width) {
     max-width: 567px;
-    padding: 11px 19px;
+    padding: 9px 19px 10px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &--heft {
+    margin-left: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 24px;
+    }
+  }
+
+  &--email {
+    margin-left: 23px;
+  }
+
+  &--phone {
+    margin-left: 9px;
   }
 }
 
 .field__icon {
   position: absolute;
   display: block;
-  top: 16px;
+  top: 14px;
   right: 7px;
   border: none;
   background-color: @White;

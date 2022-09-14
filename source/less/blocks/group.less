@@ -4,7 +4,11 @@
 
 .group__header {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 73px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -16,11 +20,12 @@
 
 .group__box {
   position: relative;
+  margin-top: -1px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 17px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -28,7 +33,7 @@
     z-index: 1;
 
     @media (min-width: @tablet-width) {
-      top: 23px;
+      top: 28px;
     }
   }
 }
@@ -51,6 +56,12 @@
     padding: 0;
   }
 
+  &--radio {
+    @media (min-width: @tablet-width) {
+      margin-top: 48px;
+    }
+  }
+
   &--desctop {
     @media (min-width: @desktop-width) {
       width: 100%;
@@ -60,13 +71,13 @@
 
 .group__title {
   margin-left: -20px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 4px 22px 4px 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin-left: -39px;
-    margin-bottom: 32px;
+    margin-left: -42px;
+    margin-bottom: 44px;
     padding: 4px 42px 4px 39px;
   }
 
@@ -84,7 +95,7 @@
   grid-template-columns: 1fr;
   row-gap: 13px;
   margin: 0;
-  padding: 22px 0 20px;
+  padding: 22px 0 23px;
   list-style-type: none;
   border: none;
 
@@ -94,10 +105,13 @@
   }
 
   &--radio {
+    padding-top: 25px;
+    padding-bottom: 20px;
+
     &::before {
       content: "";
       position: absolute;
-      top: 215px;
+      top: 209px;
       left: 0;
       width: 100%;
       height: 1px;
@@ -110,6 +124,9 @@
     }
 
     @media (min-width: @tablet-width) {
+      row-gap: 13px;
+      padding-top: 25px;
+      padding-bottom: 20px;
       padding-left: 25px;
       padding-right: 25px;
       border: 1px solid @special-grey-5;
@@ -144,11 +161,12 @@
 }
 
 .group__comment {
+  min-height: 151px;
   margin: 0;
   padding: 9px 12px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: @oswald-font;
+  // font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -168,6 +186,7 @@
 .group__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 9px;
 
   @media (min-width: @tablet-width) {
     display: grid;
