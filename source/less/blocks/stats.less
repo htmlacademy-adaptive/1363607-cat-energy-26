@@ -13,26 +13,18 @@
     @media (min-width: @tablet-width) {
       width: 225px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 294px;
+    }
   }
 }
 
 .stats__item {
   display: flex;
   justify-content: space-between;
-  // font-family: "Arial", sans-serif;
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 12px;
-  // line-height: 16px;
-  // color: @dark-grey;
-  // margin-bottom: 2px;
-
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
 
   @media (min-width: @tablet-width) {
-    // font-size: 16px;
     padding: 7px 0 9px 0;
     border-bottom: 1px solid @special-light-grey;
   }
@@ -46,8 +38,13 @@
     margin-bottom: 13px;
 
     @media (min-width: @tablet-width) {
+      justify-content: end;
       margin-bottom: 0;
       border-bottom: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      justify-content: space-between;
     }
   }
 }
@@ -60,4 +57,10 @@
 .stats__price {
   margin: 0;
   padding: 0;
+
+  &--add {
+    @media (min-width: @tablet-width) {
+      margin-left: 50px;
+    }
+  }
 }

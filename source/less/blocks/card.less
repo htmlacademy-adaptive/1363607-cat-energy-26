@@ -3,7 +3,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  // padding-top: 8px;
 
   @media (min-width: @tablet-width) {
     background-color: @basic-grey;
@@ -14,16 +13,6 @@
       background-color: @White;
     }
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 1px;
-  //   background-color: @special-grey-1;
-  // }
 }
 
 .card__card-box {
@@ -86,32 +75,24 @@
     align-items: center;
     width: 100%;
   }
-
-  @media (min-width: @desktop-width) {
-    // padding-left: 8px;
-    // padding-right: 8px;
-    // box-sizing: border-box;
-  }
 }
 
 .card__additional {
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 19px;
-  // box-shadow: 0 0 0 1.5px @special-grey-1;
+  box-shadow: 0 1px 0 0 @special-grey-1;
   border-top: 1px solid @special-grey-1;
-  border-bottom: 1px solid @special-grey-1;
-  // &:first-child {
-  //   border-top: 1px solid @special-grey-1;
-  // }
-  margin-top: -1px;
+  box-sizing: border-box;
 
-  &:first-child {
-    margin-top: 0;
+  @media (min-width: @tablet-width) {
+    padding: 25px 38px 28px;
+    box-shadow: none;
+    border: 1px solid @special-grey-1;
+    background-color: @White;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding: 15px 0 16px;
     background-color: @White;
   }
 }
@@ -120,13 +101,6 @@
   margin: 0;
   margin-bottom: 12px;
   width: 80px;
-  // font-family: "Oswald", sans-serif;
-  // font-style: normal;
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 20px;
-  // text-transform: uppercase;
-  // color: @special-dark-grey;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -134,8 +108,6 @@
     margin-bottom: 12px;
     padding: 0 8px;
     text-align: center;
-    // font-size: 20px;
-    // line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -163,6 +135,7 @@
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
       padding: 0;
+      text-align: left;
     }
   }
 }
@@ -224,6 +197,13 @@
     color: @dark-grey;
     background-color: @basic-grey;
   }
+
+  &--additional {
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .card___toggle {
@@ -279,8 +259,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    height: 23px;
-    margin-bottom: 18px;
+    height: 24px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
