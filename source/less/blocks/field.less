@@ -40,10 +40,18 @@
 
   &--email {
     margin-left: 23px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 20px;
+    }
   }
 
   &--phone {
     margin-left: 9px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 14px;
+    }
   }
 }
 
@@ -54,4 +62,9 @@
   right: 7px;
   border: none;
   background-color: @White;
+
+  @media (min-width: @tablet-width) {
+    top: 14px;
+    right: 10px;
+  }
 }
