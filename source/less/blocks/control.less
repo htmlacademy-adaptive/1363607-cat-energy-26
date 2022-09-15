@@ -3,6 +3,7 @@
   display: block;
   padding-left: 45px;
   line-height: 30px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding-left: 62px;
@@ -42,6 +43,14 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.control__input:hover + .control__mark {
+  border: 1px solid @special-grey-6;
+}
+
+.control__input[disabled] + .control__mark + .label {
+  opacity: 0.3;
 }
 
 .control__input[type="checkbox"] + .control__mark {

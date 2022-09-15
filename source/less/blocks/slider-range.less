@@ -37,6 +37,7 @@
   top: 0;
   width: 4px;
   height: 100%;
+  cursor: pointer;
 }
 
 .slider-range__bar {
@@ -44,6 +45,15 @@
   height: 100%;
   border-radius: 2px;
   background-color: @special-grey-2;
+
+  &:hover {
+    background-color: @basic-green;
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47, 0.6);
+    // opacity: 0.6;
+  }
 }
 
 .slider-range__togle {
@@ -55,6 +65,16 @@
   background: @White;
   border: 2px solid @special-grey-2;
   border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid @basic-green;
+  }
+
+  &:active {
+    border: 2px solid rgb(94, 170, 47 0.6);
+    opacity: 0.6;
+  }
 
   &--left::before,
   &--right::after {
@@ -66,6 +86,12 @@
     border-top: 9px solid transparent;
     border-bottom: 9px solid transparent;
     border-right: 9px solid @special-grey-2;
+
+    &:hover {
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-right: 9px solid @basic-green;
+    }
   }
 
   &--right::after {
@@ -73,3 +99,8 @@
     margin-left: 8px;
   }
 }
+
+// .slider-range__togle--left:hover + slider-range__togle--right:hover {
+//   background-color: @basic-green;
+//   border: 2px solid @basic-green;
+// }

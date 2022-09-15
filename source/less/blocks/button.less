@@ -5,13 +5,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: @White;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  cursor: pointer;
+
+  // &:active {
+
+  //   // opacity: 0.3;
+  //   background-color: @basic-green-2;
+  //   color: rgb(255, 255, 255, 0.3);
+  // }
 
   &--hero {
     padding: 11px 44px;
-    color: @White;
+
     background-color: @basic-green;
 
     @media (min-width: @tablet-width) {
@@ -25,9 +34,16 @@
     padding: 10px 44px;
     font-size: 16px;
     line-height: 20px;
-    color: @White;
+    // color: @White;
     background-color: @basic-green;
     border: none;
+
+    &:active {
+
+      // opacity: 0.3;
+      background-color: @basic-green-2;
+      color: rgb(255, 255, 255, 0.3);
+    }
 
     @media (min-width: @tablet-width) {
       padding: 16px 44px;
@@ -53,6 +69,7 @@
 
     &:active {
       opacity: 0.3;
+      // background-color: transparent;
     }
 
     @media (min-width: @tablet-width) {
