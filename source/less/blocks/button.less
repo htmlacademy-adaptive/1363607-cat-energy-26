@@ -20,8 +20,12 @@
 
   &--hero {
     padding: 11px 44px;
-
     background-color: @basic-green;
+
+    &:active {
+      background-color: @basic-green-2;
+      color: @White-2;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 17px 27px;
@@ -39,10 +43,8 @@
     border: none;
 
     &:active {
-
-      // opacity: 0.3;
       background-color: @basic-green-2;
-      color: rgb(255, 255, 255, 0.3);
+      color: @White-2;
     }
 
     @media (min-width: @tablet-width) {
@@ -68,8 +70,8 @@
     }
 
     &:active {
-      opacity: 0.3;
-      // background-color: transparent;
+      color: @dark-grey-2;
+      fill: @dark-grey-2;
     }
 
     @media (min-width: @tablet-width) {
