@@ -60,20 +60,8 @@
   }
 }
 
-input.field__name:focus + .field__icon {
+.field__name:focus + .field__icon {
   fill: @basic-green;
-}
-
-// input.field__name:focus + .field__icon path  {
-//   stroke: @basic-green;
-// }
-
-.error {
-  box-shadow: 0 0 0 2px @error;
-}
-
-.error + .field__icon {
-  fill: @error;
 }
 
 .field__icon {
@@ -88,4 +76,12 @@ input.field__name:focus + .field__icon {
     top: 14px;
     right: 10px;
   }
+
+  &--email {
+    stroke: @special-dark-grey;
+  }
+}
+
+.field__name:focus + .field__icon--email {
+  stroke: @basic-green;
 }

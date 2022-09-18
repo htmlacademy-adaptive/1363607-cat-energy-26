@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/Favicon/152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/Favicon/180.png">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="favicon.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 
@@ -21,22 +22,22 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="header__logo--image" src="img/logo/logo.svg" alt="Логотип.">
+          <img class="header__image" src="img/logo/logo.svg" alt="Логотип.">
         </picture>
       </a>
       <nav class="header__navigation navigation navigation--opened navigation--nojs">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
             меню.</span></button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list site-list">
-            <li class="site-list__item site-list__item-hero--current">
-              <a class="site-list__link-hero" href="index.html">Главная</a>
+          <ul class="navigation__list site-list site-list--hero">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link " href="index.html">Главная</a>
             </li>
-            <li class="site-list__item-hero">
-              <a class="site-list__link-hero" href=" catalog.html">Каталог продукции</a>
+            <li class="site-list__item ">
+              <a class="site-list__link " href=" catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item-hero">
-              <a class="site-list__link-hero" href="form.html">Подбор программы</a>
+            <li class="site-list__item ">
+              <a class="site-list__link " href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -205,7 +206,7 @@
       </div>
       <iframe class="contacts__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
-        width="100%" height="400" frameborder="0"></iframe>
+        width="320" height="400"></iframe>
     </div>
     <div class="main-footer__footer">
       <div class="container footer">
