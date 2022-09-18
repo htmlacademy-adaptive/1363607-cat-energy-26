@@ -1,9 +1,5 @@
 .field {
   position: relative;
-
-  &:focus {
-    // fill: @basic-green;
-  }
 }
 
 .field__label {
@@ -18,8 +14,7 @@
   margin: 0;
   margin-left: 14px;
   padding: 11px 15px 13px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  font-family: @oswald-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -29,19 +24,9 @@
   box-shadow: 0 0 0 1px @special-grey-5;
   box-sizing: border-box;
 
-&:hover {
-  // fill: @basic-green;
-  box-shadow: 0 0 0 1px @special-grey-3;
-}
-
-// &:focus + .field__icon {
-//   fill: @basic-green;
-//   box-shadow: 0 0 0 2px @dark-grey;
-// }
-
-&:error {
-  box-shadow: 0 0 0 2px @error;
-}
+  &:hover {
+    box-shadow: 0 0 0 1px @special-grey-3;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 567px;
@@ -75,12 +60,20 @@
   }
 }
 
-input.field__name:focus + .field__icon  {
+input.field__name:focus + .field__icon {
   fill: @basic-green;
 }
 
-input.field__name:focus + .field__icon path  {
-  stroke: @basic-green;
+// input.field__name:focus + .field__icon path  {
+//   stroke: @basic-green;
+// }
+
+.error {
+  box-shadow: 0 0 0 2px @error;
+}
+
+.error + .field__icon {
+  fill: @error;
 }
 
 .field__icon {
@@ -90,10 +83,6 @@ input.field__name:focus + .field__icon path  {
   right: 7px;
   border: none;
   background-color: @White;
-
-  // &:focus {
-  //   fill: @basic-green;
-  // }
 
   @media (min-width: @tablet-width) {
     top: 14px;
