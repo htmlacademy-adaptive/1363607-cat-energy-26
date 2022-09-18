@@ -1,15 +1,15 @@
 .programs-card {
   position: relative;
-  padding: 24px 20px 18px;
+  padding: 16px 22px 18px;
   background-color: @basic-grey;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 28px 53px 52px;
+    padding: 63px 28px 53px 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 51px 55px 52px;
+    padding: 63px 51px 55px 52px;
   }
 }
 
@@ -17,6 +17,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    position: relative;
+  }
 }
 
 .programs-card__icon {
@@ -24,7 +35,7 @@
   width: 50px;
   height: 50px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 17px;
   border-radius: 50%;
   background-color: @basic-green;
   background-repeat: no-repeat;
@@ -32,17 +43,20 @@
   background-size: 36px 50px;
 
   @media (min-width: @tablet-width) {
-    order: 3;
+    position: absolute;
+    top: 30px;
+    right: 33px;
     width: 200px;
     height: 200px;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    order: 1;
+    top: -15px;
+    left: 0;
+    right: 0;
     width: 100px;
     height: 100px;
-    margin-bottom: 39px;
   }
 
   &::before {
@@ -56,8 +70,8 @@
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      top: -14px;
-      left: 25px;
+      top: -11px;
+      left: 28px;
       width: 140px;
       height: 194px;
       background-image: url("../img/programs/cat-slim-bg.svg");
@@ -65,7 +79,7 @@
 
     @media (min-width: @desktop-width) {
       top: -5px;
-      left: 16px;
+      left: 15px;
       width: 70px;
       height: 97px;
       background-image: url("../img/programs/cat-slim-l.svg");
@@ -91,8 +105,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: 26px;
-      left: -16px;
+      top: 20px;
+      left: -19px;
       width: 134px;
       height: 56px;
       background-image: url("../img/programs/cat-pro-l.svg");
@@ -101,33 +115,23 @@
 }
 
 .programs-card__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: @black;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 17px;
   margin-left: 6px;
   padding: 13px;
 
   @media (min-width: @tablet-width) {
-    order: 1;
-    font-size: 36px;
-    line-height: 36px;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 13px;
     margin-left: 0;
     padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    order: 2;
     width: 232px;
     margin-left: 62px;
-    margin-bottom: 39px;
+    margin-bottom: 61px;
+    padding-left: 100px;
   }
 }
 
@@ -136,14 +140,12 @@
   margin: 0 0 38px 0;
 
   @media (min-width: @tablet-width) {
-    order: 2;
     width: 340px;
-    margin: 0;
-    margin-right: 54px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    order: 3;
+    width: 100%;
     margin-bottom: 23px;
   }
 }

@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/Favicon/152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/Favicon/180.png">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="favicon.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 
@@ -15,31 +16,34 @@
 
 <body class="page__body">
 
-  <header class="page__header container header">
-    <a class="header__logo" href="">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="header__logo--image" src="img/logo/logo.svg" alt="Логотип.">
-      </picture>
-    </a>
-    <nav class="header__navigation navigation navigation--closed navigation--nojs">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
-          меню.</span></button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item site-list__item-hero--current">
-            <a class="site-list__link-hero" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item-hero">
-            <a class="site-list__link-hero" href=" catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item-hero">
-            <a class="site-list__link-hero" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page__header container">
+    <div class="header">
+      <a class="header__logo" href="">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="header__image" src="img/logo/logo.svg" alt="Логотип.">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
+            меню.</span></button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list site-list site-list--hero">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link " href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item ">
+              <a class="site-list__link " href=" catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item ">
+              <a class="site-list__link " href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
   </header>
   <main class="page__container main-index">
     <section class="main-index__hero">
@@ -48,7 +52,7 @@
           <h1 class="hero__title title title--hero">Функциональное питание для котов</h1>
           <p class="hero__subtitle subtitle subtitle--hero">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
+            <source type="image/webp" media="(min-width: 1440px)"
               srcset="img/hero/can-desktop.webp 1x, img/hero/can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/hero/can-tablet.webp 1x, img/hero/can-mobile@2x.webp 2x">
@@ -59,7 +63,7 @@
             <img class="hero__image" src="img/hero/can-mobile.png" srcset="img/hero/can-mobile@2x.png 2x"
               alt="Банка кошачьего корма." />
           </picture>
-          <a class="hero__button button button--hero" href="#">Подобрать программу</a>
+          <a class="hero__button button button--hero" href="form.html">Подобрать программу</a>
         </div>
       </div>
     </section>
@@ -71,7 +75,7 @@
         <li class="programs__item programs-card">
           <article class="programs-card__content">
             <div class="programs-card__icon"></div>
-            <h3 class="programs-card__title">Похудение</h3>
+            <h3 class="programs-card__title title title--programs-card">Похудение</h3>
             <p class="programs-card__description description">Ваш кот весит больше собаки и почти утратил способность
               лазить
               по деревьям?
@@ -83,7 +87,7 @@
         <li class="programs__item programs-card">
           <article class="programs-card__content">
             <div class="programs-card__icon programs-card__icon--puma"></div>
-            <h3 class="programs-card__title">Набор массы</h3>
+            <h3 class="programs-card__title title title--programs-card">Набор массы</h3>
             <p class="programs-card__description description">Заработать авторитет среди дворовых котов и даже собак?
               Серия
               Cat Energy
@@ -98,24 +102,24 @@
       <div class="advetages__wrapper">
         <h2 class="advetages__title title">Как это работает</h2>
         <ol class="advetages__list">
-          <li class="advetages__item advetages__item--natur">
+          <li class="advetages__item">
             <div class="advetages__square advetages__square--natur"></div>
             <p class="advetages__description description">Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
-          <li class="advetages__item advetages__item--fast">
+          <li class="advetages__item">
             <div class="advetages__square advetages__square--fast"></div>
             <p class="advetages__description description">Выпускается в виде порошка, который нужно лишь залить кипятком
               и готово.
             </p>
           </li>
-          <li class="advetages__item advetages__item--eat">
+          <li class="advetages__item">
             <div class="advetages__square advetages__square--eat"></div>
             <p class="advetages__description description">Замените один-два приема обычной еды на наше функциональное
               питание.</p>
           </li>
-          <li class="advetages__item advetages__item--time">
+          <li class="advetages__item">
             <div class="advetages__square advetages__square--time"></div>
             <p class="advetages__description description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!</p>
@@ -125,7 +129,7 @@
     </section>
     <section class="example">
       <div class="container example__wrapper">
-        <div class="exampl__item">
+        <div class="example__item">
           <h2 class="example__title title title--large">Живой пример</h2>
           <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
             на
@@ -147,7 +151,11 @@
                   времени</span>
               </div>
             </div>
-            <p class="promo__subtitle subtitle subtitle--medium">Затраты на питание: 15 000 РУБ. </p>
+            <div class="promo__value">
+              <p class="promo__subtitle subtitle subtitle--medium">Затраты на питание:</p>
+              <p class="promo__price subtitle subtitle--medium">15 000 РУБ.</p>
+            </div>
+
           </div>
         </div>
 
@@ -185,16 +193,20 @@
     </section>
   </main>
   <footer class="main-footer">
+    <h2 class="visually-hidden">Контакты</h2>
     <div class="main-footer__contacts contacts">
       <div class="container">
         <div class="contacts__info">
-          <h3 class="contacts__info-title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h3 class="contacts__info-title title title--tiny">приглашаем к сотрудничеству дилеров!</h3>
+          <div class="contacts__inner">
+            <p class="contacts__text contacts__text--stret">ул. Большая Конюшенная, д. 19/8 </p>
+            <p class="contacts__text">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <iframe class="contacts__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
-        width="100%" height="400" frameborder="0"></iframe>
+        width="320" height="400"></iframe>
     </div>
     <div class="main-footer__footer">
       <div class="container footer">
@@ -209,7 +221,7 @@
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#vkontakte"></use>
                 </svg>
@@ -217,7 +229,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#youtube"></use>
                 </svg>
@@ -225,7 +237,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#telegram"></use>
                 </svg>

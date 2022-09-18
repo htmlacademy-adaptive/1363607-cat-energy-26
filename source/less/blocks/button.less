@@ -1,52 +1,66 @@
 .button {
   display: inline-block;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: @oswald-font;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: @White;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 
   &--hero {
     padding: 11px 44px;
-    color: @White;
     background-color: @basic-green;
 
+    &:active {
+      background-color: @basic-green-2;
+      color: @White-2;
+    }
+
     @media (min-width: @tablet-width) {
-      padding: 14px 26px;
+      padding: 17px 27px;
       font-size: 20px;
       line-height: 20px;
     }
   }
 
   &--primary {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    padding: 10px 44px;
+    padding: 10px;
     font-size: 16px;
     line-height: 20px;
-    color: @White;
+    text-align: center;
     background-color: @basic-green;
     border: none;
 
-    @media (min-width: @tablet-width) {
-      padding: 13px 44px;
-      font-size: 20px;
+    &:active {
+      background-color: @basic-green-2;
+      color: @White-2;
+    }
+  }
+
+  &--add {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @dark-grey;
+    background-color: @basic-grey;
+
+    &:active {
+      color: @dark-grey-2;
     }
   }
 
   &--arow {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    padding: 4px 47px 4px 2px;
+    padding: 4px 47px 4px 0;
     font-size: 16px;
     line-height: 16px;
     color: @black;
     background-image: url("../../img/programs/arow.svg");
     background-size: 24px 12px;
-    background-position: 118px 13px;
+    background-position: 100px 6px;
     background-repeat: no-repeat;
     transition: 0.3s;
 
@@ -62,6 +76,8 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
+      padding-right: 60px;
+      background-position: 131px 12px;
     }
   }
 }

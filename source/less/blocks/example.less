@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 16px;
 
   &::before {
     content: "";
@@ -16,18 +16,22 @@
     @media (min-width: @tablet-width) {
       height: 462px;
     }
+
+    @media (min-width: @desktop-width) {
+      height: 462px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    padding-top: 43px;
+    padding-top: 13px;
     padding-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     padding-top: 0;
-    padding-bottom: 75px;
+    padding-bottom: 68px;
   }
 }
 
@@ -40,7 +44,11 @@
 }
 
 .example__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 44px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 76px;
@@ -48,7 +56,13 @@
 }
 
 .example__description {
+  margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 32px;
+    margin-bottom: 52px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 70px;
@@ -60,7 +74,7 @@
 }
 
 .example__promo {
-  margin: 0 0 20px 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 25px;

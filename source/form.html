@@ -14,31 +14,34 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header container header">
-    <a class="header__logo" href="">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="header__logo--image" src="img/logo/logo.svg" alt="Логотип.">
-      </picture>
-    </a>
-    <nav class="header__navigation navigation navigation--closed navigation--nojs">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
-          меню.</span></button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href=" catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page__header container">
+    <div class="header">
+      <a class="header__logo" href="">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="header__image" src="img/logo/logo.svg" alt="Логотип.">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть или закрыть
+            меню.</span></button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list site-list">
+            <li class="site-list__item ">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href=" catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
   </header>
   <main class="page__container main-page">
 
@@ -61,25 +64,25 @@
               <ul class="group__list">
                 <li class="group__field field">
                   <label class="field__label label">ИМЯ:*
-                    <input class="field-name" type="text" name="name" placeholder="БАРСИК" required>
+                    <input class="field__name" type="text" name="name" placeholder="БАРСИК" required>
                   </label>
                 </li>
 
                 <li class="group__field field">
                   <label class="field__label label">ВЕС(КГ):*
-                    <input class="field-name" type="text" name="name" placeholder="7" required>
+                    <input class="field__name field__name--heft" type="text" name="name" placeholder="7" required>
                   </label>
                 </li>
 
                 <li class="group__field field">
                   <label class="field__label label">ВОЗРАСТ(ЛЕТ):*
-                    <input class="field-name" type="text" name="name" placeholder="7">
+                    <input class="field__name" type="text" name="name" placeholder="7">
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="group__items">
+            <fieldset class="group__items group__items--radio">
               <legend class="visually-hidden">Выбор назначения корма.</legend>
               <ul class="group__list group__list--radio">
 
@@ -94,7 +97,8 @@
 
                 <li class="group__control">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="product" value="care-products">
+                    <input class="visually-hidden control__input" type="radio" name="product" value="care-products"
+                      disabled>
                     <span class="control__mark"></span>
                     <span class="control__label label">Набор массы</span>
                   </label>
@@ -113,38 +117,36 @@
           </div>
         </div>
 
-        <div class="group__box">
+        <div class="group__box group__box--cat">
           <div class="container">
             <fieldset class="group__items group__items--desctop">
 
-              <legend class="group__title group__title--contact title title--medium ">Контакеные данные (владельца кота)
+              <legend class="group__title group__title--cat title title--medium ">Контакеные данные (владельца кота)
               </legend>
 
               <ul class="group__list group__list--inner">
 
                 <li class="group__field field">
-                  <label class="field__label label">E-MAIL:*
-                    <input class="field-name" placeholder="kuklachev@gmail.com" type="email" name="field-email"
-                      required>
-                  </label>
-                  <button class="field__icon" type="button">
-                    <svg width="20" height="15">
+                  <label class="field__label label">E&#8209MAIL:*
+
+                    <!-- для проверки состояния ошибки дописать тег error -->
+                    <input class="field__name field__name--email error" placeholder="kuklachev@gmail.com" type="email"
+                      name="field-email" required><svg class="field__icon field__icon--email" width="20" height="21">
                       <use href="img/sprite.svg#email"></use>
                     </svg>
                     <span class="visually-hidden">Введите адрес электронной
-                      почты.</span></button>
+                      почты.</span>
+                  </label>
                 </li>
 
                 <li class="group__field field">
                   <label class="field__label label">ТЕЛЕФОН:*
-                    <input class="field-name" placeholder="8(960) 900-60-90" type="phone" name="field-phone" required>
-                  </label>
-                  <button class="field__icon" type="button">
-                    <svg width="20" height="21">
+                    <input class="field__name field__name--phone" placeholder="8(960) 900-60-90" type="tel"
+                      name="field-phone" required><svg class="field__icon" width="20" height="21">
                       <use href="img/sprite.svg#phone"></use>
                     </svg>
                     <span class="visually-hidden">Введите номер телефона.</span>
-                  </button>
+                  </label>
                 </li>
               </ul>
 
@@ -152,13 +154,13 @@
           </div>
         </div>
 
-        <div class="group__box">
+        <div class="group__box group__box--commit">
           <div class="container line">
             <fieldset class="group__items group__items--desctop">
 
-              <legend class="group__title title title--medium ">Комментарий</legend>
+              <legend class="group__title group__title--commit title title--medium ">Комментарий</legend>
               <div class="group__list group__list--inner">
-                <textarea class="group__comment" name="comment" id="comment-field" cols="30" rows="10"
+                <textarea class="group__comment" name="comment" id="comment-field" cols="30" rows="6"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
 
@@ -183,7 +185,7 @@
 
                 <li class="group__control">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="drinking-water">
+                    <input class="visually-hidden control__input" type="checkbox" name="drinking-water" disabled>
                     <span class="control__mark"></span>
                     <span class="control__label label">питьевая вода</span>
                   </label>
@@ -212,7 +214,7 @@
 
         <div class="container">
           <div class="group__wrapper">
-            <button class="group__button button--primary">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <button class="group__button button button--primary">ОТПРАВИТЬ ЗАЯВКУ</button>
             <p class="group__required-fields">* — Обязательные поля</p>
           </div>
         </div>
@@ -222,21 +224,25 @@
 
   </main>
   <footer class="main-footer">
+    <h2 class="visually-hidden">Контакты</h2>
     <div class="main-footer__contacts contacts">
       <div class="container">
         <div class="contacts__info">
-          <h3 class="contacts__info-title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h3 class="contacts__info-title title title--tiny">приглашаем к сотрудничеству дилеров!</h3>
+          <div class="contacts__inner">
+            <p class="contacts__text contacts__text--stret">ул. Большая Конюшенная, д. 19/8 </p>
+            <p class="contacts__text">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <iframe class="contacts__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A333fb8cb3c044f794ea076fc70b2bb50f2d815131749c2d3f5d3dbe973395fda&amp;source=constructor"
-        width="100%" height="400" frameborder="0"></iframe>
+        width="320" height="400"></iframe>
     </div>
     <div class="main-footer__footer">
       <div class="container footer">
         <a class="footer__logo-text" href="#">
-          <svg class="footer__logo-image" width="128" height="24">
+          <svg class="footer__logo-icon" width="128" height="24">
             <use href="img/sprite.svg#footer-logo"></use>
           </svg>
           <span class="visually-hidden">Логотип Html академия.</span>
@@ -246,24 +252,24 @@
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg width="28" height="22">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="28" height="22">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#youtube"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg width="28" height="22">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg class="social__icon" width="28" height="22">
                   <use href="img/sprite.svg#telegram"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Телеграме.</span></a>
@@ -275,7 +281,7 @@
         <div class="footer__copyright">
           <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo-image" width="27" height="34">
+            <svg class="copyright__logo-icon" width="27" height="34">
               <use href="img/sprite.svg#logo-html-academy"></use>
             </svg>
           </a>

@@ -4,23 +4,28 @@
 
 .group__header {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 73px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 69px;
+    margin-bottom: 40px;
   }
 }
 
 .group__box {
   position: relative;
+  margin-top: -1px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 17px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -28,7 +33,27 @@
     z-index: 1;
 
     @media (min-width: @tablet-width) {
-      top: 23px;
+      top: 28px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 29px;
+    }
+  }
+
+  &--cat {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &--commit {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 39px;
     }
   }
 }
@@ -49,6 +74,17 @@
   @media (min-width: @desktop-width) {
     width: 568px;
     padding: 0;
+    margin: 0;
+  }
+
+  &--radio {
+    @media (min-width: @tablet-width) {
+      margin-top: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
   }
 
   &--desctop {
@@ -60,21 +96,28 @@
 
 .group__title {
   margin-left: -20px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 4px 22px 4px 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin-left: -39px;
-    margin-bottom: 32px;
+    margin-left: -40px;
+    margin-bottom: 31px;
     padding: 4px 42px 4px 39px;
   }
 
-  &--contact {
+  &--cat {
     width: 229px;
 
     @media (min-width: @tablet-width) {
       width: 598px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--commit {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 49px;
     }
   }
 }
@@ -84,20 +127,23 @@
   grid-template-columns: 1fr;
   row-gap: 13px;
   margin: 0;
-  padding: 22px 0 20px;
+  padding: 22px 0 23px;
   list-style-type: none;
   border: none;
 
   @media (min-width: @tablet-width) {
     padding: 25px 0;
-    row-gap: 20px;
+    row-gap: 19px;
   }
 
   &--radio {
+    padding-top: 25px;
+    padding-bottom: 20px;
+
     &::before {
       content: "";
       position: absolute;
-      top: 215px;
+      top: 209px;
       left: 0;
       width: 100%;
       height: 1px;
@@ -110,6 +156,9 @@
     }
 
     @media (min-width: @tablet-width) {
+      row-gap: 13px;
+      padding-top: 25px;
+      padding-bottom: 20px;
       padding-left: 25px;
       padding-right: 25px;
       border: 1px solid @special-grey-5;
@@ -127,12 +176,13 @@
     @media (min-width: @tablet-width) {
       grid-template-columns: 221px 221px;
       gap: 32px 123px;
-      margin-bottom: 29px;
+      margin-bottom: 18px;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: repeat(4, 221px);
       column-gap: 104px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -144,11 +194,11 @@
 }
 
 .group__comment {
+  min-height: 151px;
   margin: 0;
   padding: 9px 12px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: @oswald-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -156,7 +206,8 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 19px;
+    min-height: 174px;
+    padding: 15px 19px;
     font-size: 20px;
   }
 
@@ -168,6 +219,7 @@
 .group__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 9px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -176,12 +228,15 @@
     align-items: center;
     padding-left: 40px;
     padding-right: 37px;
+    margin-bottom: 2px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 568px 182px;
+    column-gap: 81px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -195,11 +250,16 @@
 
 .group__required-fields {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: @arial-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: @black;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

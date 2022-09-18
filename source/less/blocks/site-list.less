@@ -17,18 +17,20 @@
 .site-list__item,
 .site-list__item-hero {
   display: block;
-  padding: 22px 20px;
-  padding-bottom: 24px;
+  padding: 21px 20px;
+  padding-bottom: 20px;
   text-align: center;
-  border-top: 1px solid @light-grey;
+  box-shadow: 0 1px 0 0 @light-grey;
 
-  &:last-child {
-    border-bottom: 1px solid @light-grey;
+  &:first-child {
+    border-top: 1px solid @light-grey;
+
+    @media (min-width: @tablet-width) {
+      border-top: none;
+    }
   }
 
   &--current {
-    border-bottom: 2px solid @basic-green;
-
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
     }
@@ -38,18 +40,17 @@
     opacity: 0.6;
   }
 
-  &:down {
+  &:active {
     opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 0 14px 0;
+    padding: 0 0 9px 0;
     margin-right: 35px;
-    border-top: none;
+    box-shadow: none;
 
     &:last-child {
       margin-right: 0;
-      border-bottom: none;
     }
   }
 
@@ -58,19 +59,17 @@
   }
 }
 
-.site-list__item-hero {
-  &--current {
-    @media (min-width: @desktop-width) {
-      border-bottom: 2px solid @White;
-    }
-  }
+.site-list--hero .site-list__item--current {
+  border-color: @White;
 }
 
-.site-list__link,
-.site-list__link-hero {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+.site-list--hero .site-list__link {
+  color: @White;
+}
+
+.site-list__link {
+  font-family: @oswald-font;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -84,10 +83,10 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
   }
-}
 
-.site-list__link-hero {
-  @media (min-width: @desktop-width) {
-    color: @White;
+  &--hero {
+    @media (min-width: @desktop-width) {
+      color: @White;
+    }
   }
 }

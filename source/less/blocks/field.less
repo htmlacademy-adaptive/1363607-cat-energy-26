@@ -8,34 +8,80 @@
   align-items: center;
 }
 
-.field-name {
+.field__name {
   max-width: 229px;
   width: 100%;
   margin: 0;
-  margin-left: 13px;
-  padding: 13px 15px 14px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  margin-left: 14px;
+  padding: 11px 15px 13px;
+  font-family: @oswald-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+  border: none;
+  box-shadow: 0 0 0 1px @special-grey-5;
   box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 0 0 1px @special-grey-3;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 567px;
-    padding: 11px 19px;
+    padding: 9px 19px 10px;
     font-size: 20px;
     line-height: 30px;
   }
+
+  &--heft {
+    margin-left: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 24px;
+    }
+  }
+
+  &--email {
+    margin-left: 23px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--phone {
+    margin-left: 9px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 14px;
+    }
+  }
+}
+
+.field__name:focus + .field__icon {
+  fill: @basic-green;
 }
 
 .field__icon {
   position: absolute;
   display: block;
-  top: 16px;
+  top: 14px;
   right: 7px;
   border: none;
   background-color: @White;
+
+  @media (min-width: @tablet-width) {
+    top: 14px;
+    right: 10px;
+  }
+
+  &--email {
+    stroke: @special-dark-grey;
+  }
+}
+
+.field__name:focus + .field__icon--email {
+  stroke: @basic-green;
 }

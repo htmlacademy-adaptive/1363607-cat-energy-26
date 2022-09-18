@@ -1,12 +1,31 @@
 .catalog {
+  padding-top: 28px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    padding-top: 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+    padding-top: 57px;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid @special-grey-1;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    margin-bottom: 93px;
+    padding-bottom: 70px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -19,12 +38,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 130px 60px;
+    gap: 141px 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 133px 80px;
+    gap: 143px 80px;
     padding-top: 70px;
   }
 }

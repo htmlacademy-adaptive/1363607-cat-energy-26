@@ -3,6 +3,14 @@
   width: 100%;
   padding: 25px 0 35px 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 67px 0 75px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 75px 0 85px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,7 +22,11 @@
     z-index: 1;
 
     @media (min-width: @tablet-width) {
-      top: 49px;
+      top: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 100px;
     }
   }
 }
@@ -24,11 +36,6 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 38px;
-    padding-right: 38px;
-  }
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -41,7 +48,7 @@
 
 .additional-items__title {
   width: 268px;
-  margin: 0 0 36px -20px;
+  margin: 0 0 34px -20px;
   padding-left: 20px;
   padding-right: 22px;
   background-color: @White;
@@ -51,20 +58,22 @@
     width: 446px;
     padding-left: 68px;
     padding-right: 37px;
-    margin-left: -37px;
+    margin-left: -31px;
+    margin-bottom: 82px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    width: 414px;
-    padding-left: 37px;
+    width: 416px;
+    padding-left: 39px;
     padding-right: 37px;
-    box-sizing: border-box;
+    margin-left: -39px;
+    margin-bottom: 80px;
   }
 }
 
 .additional-items__list {
-  margin: 0 0 35px 0;
+  margin: 0 0 36px 0;
   padding: 0;
   list-style-type: none;
 
@@ -79,12 +88,17 @@
 
 .additional-items__card {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-top: 1px solid @special-grey-3;
   box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid @special-grey-3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,7 +129,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 200px;
+    padding: 0 0 200px 0;
     background-image: url("../img/background/cat-add-bg.png");
     background-position: left top;
     background-size: cover;
@@ -169,7 +183,7 @@
     width: 510px;
     top: 57px;
     left: 50%;
-    margin-left: -255px;
+    margin-left: -278px;
     padding-left: 2px;
     padding-right: 2px;
     box-sizing: border-box;
@@ -206,7 +220,7 @@
 
 .additional-items__text {
   width: 161px;
-  font-family: "Arial", sans-serif;
+  font-family: @arial-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -214,4 +228,12 @@
   color: @White;
   margin: 0;
   z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
