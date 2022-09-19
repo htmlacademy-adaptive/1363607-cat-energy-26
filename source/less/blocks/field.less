@@ -22,10 +22,15 @@
   color: @dark-grey;
   border: none;
   box-shadow: 0 0 0 1px @special-grey-5;
+  outline: none;
   box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 0 0 1px @special-grey-3;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @dark-grey;
   }
 
   @media (min-width: @tablet-width) {
