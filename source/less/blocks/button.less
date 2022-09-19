@@ -84,4 +84,24 @@
       background-position: 131px 12px;
     }
   }
+
+  &--wide {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: @basic-green;
+    border: none;
+
+    &:active {
+      background-color: @basic-green-2;
+      color: @White-2;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 12px 45px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
