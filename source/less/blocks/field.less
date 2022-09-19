@@ -40,12 +40,20 @@
     line-height: 30px;
   }
 
+  @media (min-width: @desktop-width) {
+    max-width: 503px;
+  }
+
   &--heft {
     margin-left: 20px;
 
     @media (min-width: @tablet-width) {
       margin-left: 0;
       max-width: 535px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 473px;
     }
   }
 
@@ -57,6 +65,12 @@
       margin-left: 0;
       max-width: 496px;
     }
+
+    @media (min-width: @desktop-width) {
+      // margin-left: 24px;
+      // margin-left: 0;
+      max-width: 434px;
+    }
   }
 
   &--email {
@@ -65,6 +79,11 @@
     @media (min-width: @tablet-width) {
       margin-left: 20px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      max-width: 484px;
+    }
   }
 
   &--phone {
@@ -72,6 +91,11 @@
 
     @media (min-width: @tablet-width) {
       margin-left: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      max-width: 471px;
     }
   }
 }
