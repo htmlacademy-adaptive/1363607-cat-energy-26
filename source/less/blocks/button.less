@@ -38,8 +38,11 @@
     background-color: @basic-green;
     border: none;
 
-    &:active {
+    &:hover {
       background-color: @basic-green-2;
+    }
+
+    &:active {
       color: @White-2;
     }
   }
@@ -52,8 +55,16 @@
     color: @dark-grey;
     background-color: @basic-grey;
 
+    &:hover {
+      background-color: @special-grey-1;
+    }
+
     &:active {
       color: @dark-grey-2;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 9px 20px 9px 20px;
     }
   }
 
@@ -93,13 +104,16 @@
     background-color: @basic-green;
     border: none;
 
-    &:active {
+    &:hover {
       background-color: @basic-green-2;
+    }
+
+    &:active {
       color: @White-2;
     }
 
     @media (min-width: @tablet-width) {
-      padding: 12px 45px;
+      padding: 11px 45px;
       font-size: 20px;
       line-height: 30px;
     }

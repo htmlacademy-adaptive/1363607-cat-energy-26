@@ -16,7 +16,7 @@
     box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
-      padding: 25px 38px 28px;
+      padding: 24px 38px 28px;
       box-shadow: none;
       border: 1px solid @special-grey-1;
       background-color: @White;
@@ -77,13 +77,18 @@
     margin-bottom: 22px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
+
   &--add {
     flex-direction: column;
     padding-top: 53px;
     margin-bottom: 21px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 161px;
+      padding-top: 158px;
+      margin-bottom: 21px;
     }
   }
 }
@@ -98,6 +103,7 @@
 }
 
 .card__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 12px;
   width: 80px;
@@ -113,6 +119,7 @@
 
   @media (min-width: @desktop-width) {
     padding-right: 8px;
+    margin-bottom: 16px;
   }
 
   &--add {
@@ -126,6 +133,10 @@
       padding: 0 6px;
       line-height: 22px;
       text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 27px;
     }
   }
 
@@ -167,7 +178,7 @@
     height: 196px;
     padding-left: 4px;
     margin-top: -80px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   &--bg {
@@ -249,7 +260,7 @@
     display: flex;
     justify-content: space-between;
     height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {

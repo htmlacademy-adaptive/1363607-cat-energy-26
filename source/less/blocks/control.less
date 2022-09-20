@@ -39,24 +39,19 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    top: 11px;
-    left: 11px;
+    top: 10px;
+    left: 10px;
     width: 18px;
     height: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 9px;
-    left: 9px;
   }
 }
 
 .control__input:hover + .control__mark {
-  border: 1px solid @special-grey-6;
+  box-shadow: 0 0 0 1px @special-grey-6;
 }
 
 .control__input:focus + .control__mark {
-  border: 2px solid @basic-green-2;
+  box-shadow: 0 0 0 2px @basic-green-2;
 }
 
 .control__input[disabled] + .control__mark + .label {
