@@ -20,6 +20,7 @@
   background-color: @White;
   border-radius: 50%;
   border: 1px solid @special-grey-3;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -30,23 +31,27 @@
 .control__input[type="radio"]:checked + .control__mark::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 7px;
   width: 14px;
   height: 14px;
   background-color: @basic-green;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    top: 11px;
-    left: 11px;
+    top: 10px;
+    left: 10px;
     width: 18px;
     height: 18px;
   }
 }
 
 .control__input:hover + .control__mark {
-  border: 1px solid @special-grey-6;
+  box-shadow: 0 0 0 1px @special-grey-6;
+}
+
+.control__input:focus + .control__mark {
+  box-shadow: 0 0 0 2px @basic-green-2;
 }
 
 .control__input[disabled] + .control__mark + .label {
@@ -68,8 +73,8 @@
   transform: rotate(-50deg);
 
   @media (min-width: @tablet-width) {
-    top: 19px;
-    left: 14px;
+    top: 17px;
+    left: 12px;
     width: 23px;
     height: 2px;
   }
@@ -86,8 +91,8 @@
   transform: rotate(45deg);
 
   @media (min-width: @tablet-width) {
-    top: 23px;
-    left: 7px;
+    top: 21px;
+    left: 5px;
     width: 14px;
     height: 2px;
   }

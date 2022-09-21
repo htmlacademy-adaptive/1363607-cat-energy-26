@@ -20,6 +20,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .advetages__list {
@@ -52,14 +56,11 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    width: 250px;
     margin-bottom: 19px;
     flex-direction: column;
     align-items: start;
     padding: 41px 2px 56px 0;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 250px;
 
     &::before {
       position: absolute;
@@ -74,6 +75,10 @@
       line-height: 280px;
       color: @basic-grey;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
   }
 }
 

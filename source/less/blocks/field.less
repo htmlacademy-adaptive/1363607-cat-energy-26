@@ -13,7 +13,7 @@
   width: 100%;
   margin: 0;
   margin-left: 14px;
-  padding: 11px 15px 13px;
+  padding: 12px 14px 12px;
   font-family: @oswald-font;
   font-weight: 400;
   font-size: 16px;
@@ -22,32 +22,64 @@
   color: @dark-grey;
   border: none;
   box-shadow: 0 0 0 1px @special-grey-5;
+  outline: none;
   box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 0 0 1px @special-grey-3;
   }
 
+  &:focus {
+    box-shadow: 0 0 0 2px @dark-grey;
+  }
+
   @media (min-width: @tablet-width) {
     max-width: 567px;
-    padding: 9px 19px 10px;
+    padding: 10px 19px 11px;
     font-size: 20px;
     line-height: 30px;
   }
 
+  @media (min-width: @desktop-width) {
+    max-width: 503px;
+  }
+
   &--heft {
-    margin-left: 20px;
+    max-width: 203px;
 
     @media (min-width: @tablet-width) {
-      margin-left: 24px;
+      margin-left: 0;
+      max-width: 535px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 473px;
+    }
+  }
+
+  &--age {
+    max-width: 171px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      max-width: 496px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 434px;
     }
   }
 
   &--email {
-    margin-left: 23px;
+    max-width: 218px;
+    margin-left: 0;
 
     @media (min-width: @tablet-width) {
-      margin-left: 20px;
+      max-width: 547px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 484px;
     }
   }
 
@@ -56,6 +88,11 @@
 
     @media (min-width: @tablet-width) {
       margin-left: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      max-width: 471px;
     }
   }
 }
@@ -68,13 +105,18 @@
   position: absolute;
   display: block;
   top: 14px;
-  right: 7px;
+  right: 14px;
   border: none;
   background-color: @White;
 
   @media (min-width: @tablet-width) {
-    top: 14px;
-    right: 10px;
+    top: 16px;
+    right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
+    right: 16px;
   }
 
   &--email {
